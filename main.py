@@ -22,7 +22,7 @@ from pydantic import (
     field_validator,
 )
 
-from jobstruct.prompts import Prompts
+from src.jobstruct.prompts import Prompts
 
 ########################################
 # CONFIGURATION / CONSTANTS
