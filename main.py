@@ -785,9 +785,7 @@ def parse_bedrock_jsonl_skills(jsonl_file: str) -> list[dict]:
                 continue
 
             row = {
-                "job_id": None,
                 "job_description_hash": record_id,
-                "title": "",
                 "skills": validated.root
             }
             results.append(row)
@@ -955,7 +953,7 @@ def main(db_path: str = "nlx_jobs.duckdb"):
     start_date = datetime.utcnow() - timedelta(days=DEFAULT_LOOKBACK_DAYS)
 
     # 1) extract
-    # process_prompt_loop(con, "extract", start_date)
+    process_prompt_loop(con, "extract", start_date)
 
     # 2) skills
     process_prompt_loop(con, "skills", start_date)
