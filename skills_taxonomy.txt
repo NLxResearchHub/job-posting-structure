@@ -1,0 +1,1385 @@
+1 Accounting
+1.1 Financial Accounting
+1.1.1 Accounts Payable
+1.1.2 Accounts Receivable
+1.1.3 Bookkeeping
+1.1.4 Financial Reporting
+1.1.5 General Ledger
+1.1.6 Payroll
+1.1.7 Tax Preparation
+1.1.8 Financial Analysis
+1.1.9 Auditing
+1.1.10 Cost Accounting
+1.1.11 Budget Management
+1.1.12 Financial Modeling
+1.2 Managerial Accounting
+1.2.1 Budgeting
+1.2.2 Strategic Planning
+1.2.3 Risk Management
+1.2.4 Internal Controls
+1.2.5 Forecasting
+1.2.6 Variance Analysis
+1.3 Tax Accounting
+1.3.1 Tax Planning
+1.3.2 Tax Compliance
+1.3.3 Tax Audits
+1.3.4 Tax Research
+1.3.5 Tax Software
+1.3.6 Tax Laws and Regulations
+1.3.7 Tax Accounting Methods
+1.3.8 Tax Reporting
+1.4 Budget Analysis
+1.4.1 Budgeting Software
+1.4.1.1 Microsoft Excel
+1.4.1.2 Oracle Hyperion
+1.4.1.3 SAP Business Objects
+1.5 Accounting Software
+1.5.1 Xero
+1.5.2 FreshBooks
+1.5.2.1 Expense Tracking
+1.5.2.2 Time Tracking
+1.5.2.3 Project Management
+1.5.2.4 Tax Management
+1.5.2.5 Payroll Management
+1.5.3 SAP
+1.5.3.1 SAP ERP
+1.5.3.2 SAP S/4HANA
+1.5.3.3 SAP FI/CO
+1.5.3.4 SAP MM
+1.5.3.5 SAP SD
+1.5.3.6 SAP PP
+1.5.3.7 SAP ABAP
+1.5.3.8 SAP Basis
+1.5.3.9 SAP Security
+1.5.3.10 SAP BI/BW
+1.5.3.11 SAP HANA
+1.5.4 Oracle
+1.5.4.1 Oracle E-Business Suite
+1.5.4.2 Oracle Financials
+1.5.4.3 Oracle Fusion Applications
+1.5.4.4 Oracle PeopleSoft
+1.5.4.5 SQL
+1.5.4.6 PL/SQL
+1.5.4.7 Database Administration
+1.5.4.8 Data Modeling
+2 Administration
+2.1 Office Management
+2.2 Records Management
+2.3 Scheduling
+2.4 Facilities Management
+2.5 Event Planning
+2.6 Customer Service
+2.7 Filing
+2.8 Typing
+2.9 Human Resources
+2.10 Procurement
+2.11 Contract Management
+3 Analysis
+3.1 Data Analysis
+3.1.1 Statistical Analysis
+3.1.2 Data Mining
+3.1.3 Data Visualization
+3.1.4 Predictive Modeling
+3.1.5 Machine Learning
+3.1.6 Python
+3.1.7 R
+3.1.8 Excel
+3.1.9 Tableau
+3.1.10 Power BI
+3.2 Business Analysis
+3.2.1 Requirements Gathering
+3.2.2 Process Mapping
+3.2.3 Stakeholder Management
+3.2.4 Documentation
+3.2.5 Business Process Modeling
+3.2.6 Gap Analysis
+3.2.7 Root Cause Analysis
+3.2.8 Business Process Improvement
+3.2.9 Business Case Development
+3.3 Market Analysis
+3.3.1 Competitive Analysis
+3.3.2 Industry Analysis
+3.3.3 Consumer Analysis
+3.3.4 Trend Analysis
+3.3.5 Pricing Analysis
+3.3.6 Demand Forecasting
+3.3.7 Market Segmentation
+3.3.8 Market Research
+3.4 Quantitative Analysis
+3.4.1 Operations Research
+3.4.2 Econometrics
+3.5 Qualitative Analysis
+3.5.1 Ethnographic Research
+3.5.2 Focus Groups
+3.5.3 In-Depth Interviews
+3.5.4 Observational Studies
+3.5.5 Content Analysis
+3.5.6 Thematic Analysis
+3.5.7 Grounded Theory
+3.5.8 Discourse Analysis
+3.5.9 Narrative Analysis
+3.5.10 Phenomenological Analysis
+3.6 Requirements Analysis
+3.6.1 Elicitation Techniques
+3.6.2 Functional Requirements Gathering
+3.6.3 Non-Functional Requirements Gathering
+3.6.4 Prototyping
+3.6.5 Stakeholder Analysis
+3.6.6 Use Case Analysis
+3.6.7 User Experience (UX) Analysis
+3.7 Predictive Analytics
+3.7.1 Statistical Modeling
+3.7.2 Clustering
+3.7.3 Decision Trees
+3.7.4 Neural Networks
+3.7.5 Ensemble Methods
+3.7.6 Dimensionality Reduction
+3.7.7 Anomaly Detection
+3.7.8 Optimization Techniques
+3.7.9 Simulation
+3.8 Exploratory Data Analysis
+3.8.1 Data Cleaning
+3.8.2 Feature Engineering
+3.8.3 Correlation Analysis
+3.8.4 Clustering Analysis
+4 Arts
+4.1 Visual Arts
+4.1.1 Painting
+4.1.1.1 Oil Painting
+4.1.1.2 Acrylic Painting
+4.1.1.3 Watercolor Painting
+4.1.1.4 Pastel Painting
+4.1.1.5 Mural Painting
+4.1.1.6 Portrait Painting
+4.1.1.7 Landscape Painting
+4.1.1.8 Still Life Painting
+4.1.1.9 Abstract Painting
+4.1.1.10 Figurative Painting
+4.1.1.11 Color Theory
+4.1.1.12 Composition
+4.1.1.13 Brushwork Techniques
+4.1.1.14 Canvas Preparation
+4.1.1.15 Painting Materials Knowledge
+4.1.2 Drawing
+4.1.2.1 Sketching
+4.1.2.2 Illustration
+4.1.2.3 Figure Drawing
+4.1.2.4 Portraiture
+4.1.2.5 Still Life Drawing
+4.1.2.6 Landscape Drawing
+4.1.2.7 Cartooning
+4.1.2.8 Technical Drawing
+4.1.2.9 Perspective Drawing
+4.1.2.10 Gesture Drawing
+4.1.3 Sculpture
+4.1.3.1 Clay Modeling
+4.1.3.2 Carving
+4.1.3.3 Casting
+4.1.3.4 Welding
+4.1.3.5 Assemblage
+4.1.3.6 Stone Carving
+4.1.3.7 Wood Carving
+4.1.3.8 Metal Sculpting
+4.1.3.9 Figurative Sculpture
+4.1.3.10 Abstract Sculpture
+4.1.4 Photography
+4.1.4.1 Camera Operation
+4.1.4.2 Photo Editing
+4.1.4.2.1 Adobe Photoshop
+4.1.4.2.2 Adobe Lightroom
+4.1.4.2.3 Gimp
+4.1.4.3 Lighting Techniques
+4.1.4.4 Portrait Photography
+4.1.4.5 Landscape Photography
+4.1.4.6 Product Photography
+4.1.4.7 Event Photography
+4.1.4.8 Drone Photography
+4.1.5 Graphic Design
+4.1.5.1 Adobe Creative Suite
+4.1.5.2 Typography
+4.1.5.3 Layout Design
+4.1.5.4 Branding
+4.1.5.5 Print Design
+4.1.5.6 Web Design
+4.1.5.7 User Interface (UI) Design
+4.1.5.8 User Experience (UX) Design
+4.1.5.9 Concept Development
+4.1.5.10 Creativity
+4.1.5.11 Attention to Detail
+4.1.6 Animation
+4.1.6.1 2D Animation
+4.1.6.2 3D Animation
+4.1.6.3 Stop Motion Animation
+4.1.6.4 Character Animation
+4.1.6.5 Motion Graphics
+4.1.6.6 Rigging
+4.1.6.7 Compositing
+4.1.6.8 Animation Software
+4.1.6.8.1 Adobe Animate
+4.1.6.8.2 Toon Boom Harmony
+4.1.6.8.3 Autodesk Maya
+4.1.6.8.4 Blender
+4.1.6.8.5 Cinema 4D
+4.1.6.8.6 After Effects
+4.1.7 Video Production
+4.1.7.1 Video Editing
+4.1.7.1.1 Adobe Premiere Pro
+4.1.7.1.2 Final Cut Pro
+4.1.7.1.3 DaVinci Resolve
+4.1.7.2 Videography
+4.1.7.2.1 Lighting
+4.1.7.2.2 Audio Recording
+4.1.7.3 Scriptwriting
+4.1.7.4 Color Grading
+4.2 Performing Arts
+4.2.1 Acting
+4.2.1.1 Stage Acting
+4.2.1.1.1 Character Development
+4.2.1.1.2 Voice Projection
+4.2.1.1.3 Stage Presence
+4.2.1.1.4 Script Analysis
+4.2.1.1.5 Improvisation
+4.2.1.2 Film Acting
+4.2.1.2.1 On-Camera Technique
+4.2.1.2.2 Emotional Range
+4.2.1.2.3 Script Interpretation
+4.2.1.2.4 Auditioning
+4.2.1.3 Voice Acting
+4.2.1.3.1 Voice Modulation
+4.2.1.3.2 Vocal Characterization
+4.2.1.3.3 Microphone Technique
+4.2.1.3.4 Dialogue Delivery
+4.2.2 Dance
+4.2.2.1 Ballet
+4.2.2.2 Contemporary
+4.2.2.3 Hip Hop
+4.2.2.4 Jazz
+4.2.2.5 Tap
+4.2.2.6 Choreography
+4.2.2.7 Dance Technique
+4.2.2.8 Dance Styles (e.g. Salsa, Ballroom, etc.)
+4.2.2.9 Dance Improvisation
+4.2.2.10 Dance Composition
+4.2.2.11 Dance History and Theory
+4.2.3 Music
+4.2.3.1 Instrumental Performance
+4.2.3.1.1 Piano
+4.2.3.1.2 Guitar
+4.2.3.1.3 Violin
+4.2.3.1.4 Drums
+4.2.3.1.5 Saxophone
+4.2.3.1.6 Flute
+4.2.3.2 Vocal Performance
+4.2.3.2.1 Singing
+4.2.3.2.2 Rapping
+4.2.3.2.3 Beatboxing
+4.2.3.3 Music Theory
+4.2.3.3.1 Sight Reading
+4.2.3.3.2 Harmony
+4.2.3.4 Music Production
+4.2.3.4.1 Audio Engineering
+4.2.3.4.2 Mixing
+4.2.3.4.3 Mastering
+4.2.3.4.4 Digital Audio Workstations (DAWs)
+4.2.4 Theater
+4.2.4.1 Directing
+4.2.4.2 Playwriting
+4.2.4.3 Stage Management
+4.2.4.4 Set Design
+4.2.4.5 Lighting Design
+4.2.4.6 Costume Design
+4.2.4.7 Makeup Artistry
+4.2.4.8 Stage Combat
+4.2.4.9 Voice and Diction
+4.2.4.10 Movement and Dance
+4.3 Literary Arts
+4.3.1 Creative Writing
+4.3.1.1 Fiction Writing
+4.3.1.1.1 Novel Writing
+4.3.1.1.2 Short Story Writing
+4.3.1.2 Poetry Writing
+4.3.1.3 Non-Fiction Writing
+4.3.1.3.1 Essay Writing
+4.3.1.3.2 Article Writing
+4.3.1.3.3 Memoir Writing
+4.3.1.3.4 Journalism
+4.3.1.4 Editing and Proofreading
+4.3.1.5 Storytelling
+4.3.1.6 Copywriting
+4.3.1.7 Content Writing
+4.3.2 Poetry
+4.3.2.1 Poetic Techniques
+4.3.2.1.1 Rhyme
+4.3.2.1.2 Meter
+4.3.2.1.3 Imagery
+4.3.2.1.4 Figurative Language
+4.3.2.2 Poetry Analysis
+4.3.2.3 Poetry Recitation
+4.3.2.4 Poetry Genres
+4.3.2.4.1 Lyric Poetry
+4.3.2.4.2 Narrative Poetry
+4.3.2.4.3 Epic Poetry
+4.3.2.4.4 Dramatic Poetry
+5 Business
+5.1 Management
+5.1.1 Operations Management
+5.1.1.1 Supply Chain Management
+5.1.1.2 Logistics Management
+5.1.1.3 Quality Control
+5.1.1.4 Resource Planning
+5.1.1.5 Performance Monitoring
+5.1.2 Change Management
+5.1.2.1 Organizational Change
+5.1.2.2 Change Control
+5.1.2.3 Training and Development
+5.1.2.4 Agile Methodologies
+5.1.2.5 Lean Principles
+5.1.3 Team Leadership
+5.1.3.1 Delegation
+5.1.3.2 Motivation
+5.1.3.3 Conflict Resolution
+5.1.3.4 Performance Management
+5.1.3.5 Decision Making
+5.1.3.6 Communication
+5.1.3.7 Coaching and Mentoring
+5.2 Finance
+5.3 Marketing
+5.3.1 Digital Marketing
+5.3.1.1 Search Engine Optimization (SEO)
+5.3.1.2 Search Engine Marketing (SEM)
+5.3.1.3 Content Marketing
+5.3.1.4 Social Media Marketing
+5.3.1.5 Email Marketing
+5.3.1.6 Influencer Marketing
+5.3.1.7 Affiliate Marketing
+5.3.1.8 Video Marketing
+5.3.1.9 Analytics and Reporting
+5.3.1.10 Conversion Rate Optimization (CRO)
+5.3.1.11 Pay-Per-Click (PPC) Advertising
+5.3.1.12 Mobile Marketing
+5.3.1.13 Inbound Marketing
+5.3.1.14 Outbound Marketing
+5.4 Sales
+5.4.1 Prospecting
+5.4.1.1 Lead Generation
+5.4.1.2 Cold Calling
+5.4.1.3 Networking
+5.4.1.4 Customer Relationship Management (CRM)
+5.4.1.5 Sales Pitch
+5.4.1.6 Objection Handling
+5.4.1.7 Negotiation
+5.4.1.8 Closing Techniques
+5.4.2 Client Relationship Management
+5.4.2.1 Account Management
+5.4.2.2 Sales Presentations
+5.4.2.3 Upselling and Cross-selling
+5.4.2.4 Customer Retention
+5.4.2.5 Sales Pipeline Management
+5.4.2.6 Customer Needs Analysis
+5.4.2.7 Sales Forecasting
+5.4.3 Sales Strategy
+5.4.3.1 Customer Segmentation
+5.4.3.2 Pricing Strategy
+5.4.3.3 Territory Management
+5.4.3.4 Sales Process Optimization
+5.4.3.5 Sales Enablement
+5.4.3.6 Sales Training
+5.4.3.7 Sales Coaching
+5.4.3.8 Sales Metrics and KPIs
+5.4.3.9 Sales Reporting and Analytics
+6 Communications
+6.1 Written Communication
+6.1.1 Report Writing
+6.1.1.1 Technical Writing
+6.1.1.2 Document Formatting
+6.2 Verbal Communication
+6.2.1 Public Speaking
+6.2.1.1 Audience Engagement
+6.2.1.2 Body Language
+6.2.1.3 Impromptu Speaking
+6.2.1.4 Speech Writing
+6.2.1.5 Persuasive Communication
+6.2.2 Presentation Skills
+6.2.2.1 Visual Aids
+6.2.2.2 Q&A Handling
+6.2.2.3 Time Management
+6.2.2.4 Confidence
+6.2.2.5 Clarity of Speech
+6.2.3 Interpersonal Communication
+6.2.3.1 Clear Speech
+6.2.3.2 Empathy
+6.2.4 Negotiation Skills
+6.2.4.1 Bargaining
+6.3 Non-Verbal Communication
+6.3.1 Tone of Voice
+6.3.1.1 Pitch Variation
+6.3.1.2 Volume Control
+6.3.1.3 Pace and Rhythm
+6.3.1.4 Emphasis and Inflection
+6.4 Cross-Cultural Communication
+6.5 Teamwork and Collaboration
+6.6 Training and Coaching
+7 Education
+7.1 Teaching
+7.1.1 Lesson Planning
+7.1.2 Classroom Management
+7.1.3 Student Assessment
+7.1.4 Curriculum Development
+7.1.5 Educational Technology
+7.1.6 Differentiated Instruction
+7.1.7 Subject Knowledge
+7.1.7.1 Mathematics
+7.1.7.2 Science
+7.1.7.3 English Language Arts
+7.1.7.4 Social Studies
+7.1.7.5 Foreign Languages
+7.1.8 Special Education
+7.1.9 Early Childhood Education
+7.1.10 Adult Education
+7.1.11 Instructional Strategies
+7.1.12 Classroom Diversity and Inclusion
+7.2 Educational Administration
+7.2.1 School Policy Development
+7.2.1.1 Policy Analysis
+7.2.1.2 Regulatory Compliance
+7.2.1.3 Budgeting and Finance
+7.2.1.4 Communication and Collaboration
+7.2.1.5 Leadership and Governance
+7.2.1.6 Professional Development
+7.2.1.7 Student Support Services
+7.2.1.8 Community Relations
+7.2.2 Staff Management
+7.2.2.1 Personnel Policies
+7.2.2.2 Recruitment and Hiring
+7.2.2.3 Compensation and Benefits
+7.2.2.4 Labor Relations
+7.2.2.5 Compliance with Regulations
+7.2.2.6 Diversity and Inclusion
+7.2.2.7 Employee Engagement
+8 Engineering
+8.1 Software Engineering
+8.1.1 Programming Languages
+8.1.1.1 Java
+8.1.1.1.1 Java SE
+8.1.1.1.2 Java EE
+8.1.1.1.3 Spring Framework
+8.1.1.1.4 Hibernate
+8.1.1.1.5 JSP
+8.1.1.1.6 Servlets
+8.1.1.1.7 Java Swing
+8.1.1.1.8 JavaFX
+8.1.1.1.9 Android Development
+8.1.1.1.10 Java Concurrency
+8.1.1.1.11 Java Collections Framework
+8.1.1.1.12 Java I/O
+8.1.1.1.13 Java Networking
+8.1.1.1.14 Java Security
+8.1.1.1.15 Java Web Services
+8.1.1.1.16 Java Persistence API (JPA)
+8.1.1.1.17 Java Database Connectivity (JDBC)
+8.1.1.1.18 Java Messaging Service (JMS)
+8.1.1.1.19 Java Naming and Directory Interface (JNDI)
+8.1.1.1.20 Java Management Extensions (JMX)
+8.1.1.2 C++
+8.1.1.2.1 Object-Oriented Programming
+8.1.1.2.2 Data Structures
+8.1.1.2.3 Algorithms
+8.1.1.2.4 Memory Management
+8.1.1.2.5 Pointers
+8.1.1.2.6 Templates
+8.1.1.2.7 Standard Template Library (STL)
+8.1.1.2.8 Multithreading
+8.1.1.2.9 File I/O
+8.1.1.2.10 Exception Handling
+8.1.1.2.11 Preprocessor Directives
+8.1.1.2.12 Debugging
+8.1.1.3 JavaScript
+8.1.1.3.1 React
+8.1.1.3.2 Angular
+8.1.1.3.3 Vue.js
+8.1.1.3.4 Node.js
+8.1.1.3.5 Express.js
+8.1.1.3.6 jQuery
+8.1.1.3.7 Webpack
+8.1.1.3.8 Babel
+8.1.1.3.9 ES6
+8.1.1.3.10 TypeScript
+8.1.1.3.11 AJAX
+8.1.1.3.12 JSON
+8.1.1.3.13 DOM Manipulation
+8.1.1.3.14 Asynchronous Programming
+8.1.1.3.15 Promises
+8.1.1.3.16 Closures
+8.1.1.3.17 Prototypes
+8.1.1.3.18 Event Handling
+8.1.1.3.19 Regular Expressions
+8.1.1.4 Ruby
+8.1.1.4.1 Ruby on Rails
+8.1.1.4.2 Ruby Gems
+8.1.1.4.3 Sinatra
+8.1.1.4.4 Rspec
+8.1.1.4.5 Capybara
+8.1.1.4.6 Rake
+8.1.1.4.7 Bundler
+8.1.1.4.8 ActiveRecord
+8.1.1.4.9 ActionView
+8.1.1.4.10 ActionController
+8.1.1.5 C#
+8.1.1.5.1 .NET Framework
+8.1.1.5.2 ASP.NET
+8.1.1.5.3 Windows Forms
+8.1.1.5.4 WPF (Windows Presentation Foundation)
+8.1.1.5.5 LINQ (Language Integrated Query)
+8.1.1.5.6 Entity Framework
+8.1.1.5.7 Web Services (WCF, Web API)
+8.1.1.5.8 Unit Testing (NUnit, MSTest)
+8.1.1.5.9 Object-Oriented Programming (OOP)
+8.1.2 Mobile Development
+8.1.2.1 iOS Development
+8.1.2.1.1 Swift
+8.1.2.1.1.1 Swift Fundamentals
+8.1.2.1.1.2 UIKit
+8.1.2.1.1.3 SwiftUI
+8.1.2.1.1.4 Core Data
+8.1.2.1.1.5 Concurrency
+8.1.2.1.1.6 Xcode
+8.1.2.1.1.7 Objective-C Interoperability
+8.1.2.1.1.8 Cocoa Touch
+8.1.2.1.1.9 Instruments
+8.1.2.1.1.10 TestFlight
+8.1.2.1.1.11 App Store Connect
+8.1.2.1.1.12 Push Notifications
+8.1.2.1.1.13 In-App Purchases
+8.1.2.1.1.14 Core Animation
+8.1.2.1.1.15 Core Graphics
+8.1.2.1.1.16 Core Location
+8.1.2.1.1.17 Core Motion
+8.1.2.1.1.18 AVFoundation
+8.1.2.1.1.19 MapKit
+8.1.2.1.1.20 CloudKit
+8.1.2.1.1.21 HealthKit
+8.1.2.1.1.22 ARKit
+8.1.2.1.1.23 Core ML
+8.1.2.1.1.24 Vision
+8.1.2.1.2 Objective-C
+8.1.2.1.2.1 Grand Central Dispatch
+8.1.2.1.2.2 Storyboards
+8.1.2.1.2.3 Auto Layout
+8.1.2.1.2.4 UI Testing
+8.1.3 Database Management
+8.1.3.1 NoSQL
+8.1.4 Version Control
+8.1.4.1 Git
+8.1.4.1.1 Git Branching
+8.1.4.1.2 Git Merging
+8.1.4.1.3 Git Commit
+8.1.4.1.4 Git Push
+8.1.4.1.5 Git Pull
+8.1.4.1.6 Git Rebase
+8.1.4.1.7 Git Stash
+8.1.4.1.8 Git Log
+8.1.4.1.9 Git Diff
+8.1.4.1.10 Git Checkout
+8.1.4.1.11 Git Reset
+8.1.4.1.12 Git Remote
+8.1.4.1.13 Git Submodules
+8.1.4.1.14 Git Hooks
+8.1.4.1.15 Git Workflows
+8.1.4.1.16 Git Collaboration
+8.1.4.1.17 Git Conflict Resolution
+8.2 Hardware Engineering
+8.2.1 Electrical Engineering
+8.2.1.1 Circuit Design
+8.2.1.1.1 Analog Circuit Design
+8.2.1.1.2 Digital Circuit Design
+8.2.1.1.3 Mixed-Signal Circuit Design
+8.2.1.1.4 Power Electronics
+8.2.1.1.5 VLSI Design
+8.2.1.1.6 PCB Design
+8.2.1.1.7 Signal Integrity Analysis
+8.2.1.1.8 EMI/EMC Analysis
+8.2.1.1.9 Circuit Simulation
+8.2.1.1.10 Circuit Testing and Debugging
+8.2.1.2 Embedded Systems
+8.2.1.2.1 Microcontroller Programming
+8.2.1.2.2 Embedded C/C++
+8.2.1.2.3 Real-Time Operating Systems (RTOS)
+8.2.1.2.4 Firmware Development
+8.2.1.2.5 Hardware Interfacing
+8.2.1.2.6 Embedded Linux
+8.2.1.2.7 Embedded Software Testing
+8.2.1.2.8 Embedded Networking
+8.2.1.2.9 Power Management
+8.2.1.2.10 Embedded Security
+8.2.2 Mechanical Engineering
+8.2.2.1 CAD
+8.2.2.1.1 AutoCAD
+8.2.2.1.1.1 2D Drafting
+8.2.2.1.1.2 3D Modeling
+8.2.2.1.1.3 Architectural Design
+8.2.2.1.1.4 Mechanical Design
+8.2.2.1.1.5 Electrical Design
+8.2.2.1.1.6 Structural Design
+8.2.2.1.1.7 Rendering
+8.2.2.1.1.8 Annotation
+8.2.2.1.1.9 Dimensioning
+8.2.2.1.1.10 Block Creation
+8.2.2.1.1.11 Layer Management
+8.2.2.1.1.12 Plotting/Printing
+8.2.2.1.2 SolidWorks
+8.2.2.1.2.1 Drafting
+8.2.2.1.2.2 Assemblies
+8.2.2.1.2.3 Finite Element Analysis (FEA)
+8.2.2.1.2.4 Sheet Metal Design
+8.2.2.1.2.5 Mold Design
+8.2.2.1.2.6 Photorealistic Rendering
+8.2.2.1.2.7 Technical Drawings
+8.2.2.2 3D Printing
+8.2.2.2.1 CAD Software (e.g. AutoCAD, SolidWorks)
+8.2.2.2.2 Additive Manufacturing Processes (e.g. FDM, SLA, SLS)
+8.2.2.2.3 Material Science (e.g. Plastics, Metals, Composites)
+8.2.2.2.4 Post-Processing Techniques (e.g. Sanding, Painting, Finishing)
+8.2.2.2.5 Slicing Software (e.g. Cura, Slic3r)
+8.2.2.2.6 Troubleshooting and Maintenance
+8.3 Civil Engineering
+8.3.1 Structural Analysis
+8.3.1.1 Finite Element Analysis
+8.3.1.2 Structural Dynamics
+8.3.1.3 Reinforced Concrete Design
+8.3.1.4 Steel Design
+8.3.1.5 Seismic Analysis
+8.3.1.6 Structural Modeling
+8.3.1.7 Load Calculations
+8.3.1.8 Building Codes and Standards
+8.3.2 Construction Management
+8.3.2.1 Project Planning
+8.3.2.2 Cost Estimation
+8.3.2.3 Contract Administration
+8.3.2.4 Safety Management
+8.3.2.5 Construction Methods
+8.3.2.6 Construction Materials
+8.3.2.7 Construction Equipment
+8.3.2.8 Site Supervision
+8.3.2.9 Construction Drawings
+8.3.2.10 Building Codes and Regulations
+9 Evaluation
+9.1 Metrics and Measurements
+9.1.1 Key Performance Indicators (KPIs)
+9.1.1.1 Sales KPIs
+9.1.1.1.1 Revenue Growth
+9.1.1.1.2 Customer Acquisition Cost
+9.1.1.1.3 Customer Lifetime Value
+9.1.1.1.4 Sales Cycle Length
+9.1.1.1.5 Win Rate
+9.1.1.2 Marketing KPIs
+9.1.1.2.1 Website Traffic
+9.1.1.2.2 Conversion Rate
+9.1.1.2.3 Cost per Lead
+9.1.1.2.4 Return on Marketing Investment
+9.1.1.3 Financial KPIs
+9.1.1.3.1 Profitability
+9.1.1.3.2 Cash Flow
+9.1.1.3.3 Return on Investment
+9.1.1.3.4 Burn Rate
+9.1.1.4 Operations KPIs
+9.1.1.4.1 Productivity
+9.1.1.4.2 Cycle Time
+9.1.1.4.3 Defect Rate
+9.1.1.4.4 Inventory Turnover
+9.1.1.4.5 On-Time Delivery
+9.1.1.5 Human Resources KPIs
+9.1.1.5.1 Employee Retention Rate
+9.1.1.5.2 Time to Hire
+9.1.1.5.3 Training Effectiveness
+9.1.1.5.4 Employee Satisfaction
+9.1.1.5.5 Absenteeism Rate
+9.1.2 Return on Investment (ROI)
+9.1.2.1 Cost-Benefit Analysis
+9.1.2.2 Investment Appraisal
+9.1.2.3 Profitability Analysis
+9.1.2.4 Payback Period Calculation
+9.1.2.5 Net Present Value (NPV) Calculation
+9.1.2.6 Internal Rate of Return (IRR) Calculation
+9.1.2.7 Project Evaluation
+9.1.3 Conversion Rates
+9.1.3.1 Click-Through Rate (CTR)
+9.1.3.2 Cost per Acquisition (CPA)
+9.1.3.3 Cost per Click (CPC)
+9.1.3.4 Cost per Lead (CPL)
+9.1.3.5 Customer Acquisition Cost (CAC)
+9.1.3.6 Customer Lifetime Value (CLV)
+9.1.3.7 Email Open Rate
+9.1.3.8 Landing Page Conversion Rate
+9.1.3.9 Lead Conversion Rate
+9.1.3.10 Return on Ad Spend (ROAS)
+9.1.3.11 Shopping Cart Abandonment Rate
+9.1.3.12 User Engagement Metrics
+9.1.4 Customer Satisfaction Metrics
+9.1.4.1 Net Promoter Score (NPS)
+9.1.4.2 Customer Satisfaction Score (CSAT)
+9.1.4.3 Customer Effort Score (CES)
+9.1.4.4 Customer Churn Rate
+9.1.4.5 First Response Time
+9.1.4.6 Average Handle Time
+9.1.4.7 Customer Retention Rate
+9.2 Testing and Quality Assurance
+9.2.1 Usability Testing
+9.2.1.1 User Experience (UX) Testing
+9.2.1.2 Heuristic Evaluation
+9.2.1.3 Accessibility Testing
+9.2.1.4 A/B Testing
+9.2.1.5 Usability Surveys and Interviews
+9.2.1.6 Eye Tracking
+9.2.1.7 Card Sorting
+9.2.1.8 User Persona Development
+9.2.1.9 Task Analysis
+9.2.2 Regression Testing
+9.2.2.1 Test Case Design
+9.2.2.2 Test Execution
+9.2.2.3 Defect Tracking
+9.2.2.4 Test Automation Tools
+9.2.2.4.1 Selenium
+9.2.2.4.2 Appium
+9.2.2.4.3 Katalon Studio
+9.2.2.4.4 TestComplete
+9.2.2.5 Test Management Tools
+9.2.2.5.1 TestRail
+9.2.2.5.2 qTest
+9.2.2.5.3 Zephyr
+9.2.3 Performance Testing
+9.2.3.1 Load Testing
+9.2.3.2 Stress Testing
+9.2.3.3 Endurance Testing
+9.2.3.4 Scalability Testing
+9.2.3.5 Reliability Testing
+9.2.3.6 Volume Testing
+9.2.3.7 Concurrency Testing
+9.2.3.8 Monitoring and Profiling
+9.2.3.9 Performance Tuning
+9.2.3.10 Performance Benchmarking
+9.2.3.11 Performance Testing Tools
+9.2.3.11.1 JMeter
+9.2.3.11.2 LoadRunner
+9.2.3.11.3 WebLoad
+9.2.3.11.4 NeoLoad
+9.2.3.11.5 Apache Bench (ab)
+9.2.3.11.6 Gatling
+9.2.3.11.7 Locust
+9.2.3.11.8 Tsung
+9.2.3.11.9 Siege
+9.3 Research Methods
+9.3.1 Interviews
+9.3.1.1 Qualitative Interviews
+9.3.1.2 Structured Interviews
+9.3.1.3 Unstructured Interviews
+9.3.1.4 Focus Group Interviews
+9.3.1.5 Interview Analysis
+9.3.1.5.1 Coding
+9.3.2 Ethnographic Studies
+9.3.2.1 Participant Observation
+9.3.2.2 Field Notes
+9.3.2.3 Cultural Immersion
+9.3.2.4 Anthropology
+9.3.2.5 Sociology
+10 Health
+10.1 Medical Knowledge
+10.1.1 Anatomy
+10.1.1.1 Human Anatomy
+10.1.1.2 Anatomical Structures
+10.1.1.2.1 Skeletal System
+10.1.1.2.2 Muscular System
+10.1.1.2.3 Cardiovascular System
+10.1.1.2.4 Respiratory System
+10.1.1.2.5 Digestive System
+10.1.1.2.6 Nervous System
+10.1.1.2.7 Endocrine System
+10.1.1.2.8 Urinary System
+10.1.1.2.9 Reproductive System
+10.1.1.3 Physiology
+10.1.1.4 Pathology
+10.1.2 Medical Terminology
+10.1.2.1 Medical Abbreviations
+10.1.2.2 Medical Coding
+10.1.2.3 Medical Transcription
+10.2 Patient Care
+10.2.1 Bedside Manner
+10.2.1.1 Patience
+10.2.1.2 Professionalism
+10.2.1.3 Compassion
+10.2.1.4 Respect for Patient Privacy
+10.2.1.5 Cultural Sensitivity
+10.2.2 Patient Education
+10.2.2.1 Health Literacy
+10.2.2.2 Treatment Adherence
+10.2.2.3 Medication Management
+10.2.2.4 Discharge Planning
+10.2.2.5 Self-Care Techniques
+10.2.2.6 Lifestyle Modifications
+10.2.2.7 Disease Prevention
+10.2.2.8 Nutrition Counseling
+10.2.2.9 Pain Management Education
+10.2.3 Emotional Support
+10.2.3.1 Stress Management
+10.2.3.2 Counseling
+10.2.3.3 Motivational Interviewing
+10.2.4 Cultural Competence
+10.2.4.1 Cross-cultural Communication
+10.2.4.2 Diversity Awareness
+10.2.4.3 Language Proficiency
+10.2.4.4 Inclusive Practices
+10.2.4.5 Respect for Cultural Differences
+10.2.4.6 Culturally Appropriate Care
+10.3 Healthcare Operations
+10.3.1 Medical Billing
+10.3.1.1 Insurance Claims Processing
+10.3.1.2 Patient Billing
+10.3.1.3 Payment Posting
+10.3.1.4 Accounts Receivable Management
+10.3.1.5 HIPAA Compliance
+10.3.1.6 Electronic Health Records (EHR)
+10.3.1.7 CPT and ICD Coding
+10.3.1.8 Denial Management
+10.3.2 Healthcare Regulations
+10.3.2.1 Medicare/Medicaid Regulations
+10.3.2.2 Clinical Documentation
+10.3.2.3 Accreditation Standards
+10.3.2.4 Patient Privacy Laws
+10.3.2.5 Coding and Billing Regulations
+10.3.2.6 Quality Assurance Protocols
+10.3.2.7 Risk Management Procedures
+10.4 Specialized Areas
+10.4.1 Nursing
+10.4.1.1 Specialized Care
+10.4.1.1.1 Pediatric Nursing
+10.4.1.1.2 Geriatric Nursing
+10.4.1.1.3 Critical Care Nursing
+10.4.1.1.4 Emergency Nursing
+10.4.1.2 Nursing Theories and Principles
+10.4.1.3 Continuing Education and Professional Development
+10.4.2 Dentistry
+10.4.2.1 Oral Surgery
+10.4.2.2 Orthodontics
+10.4.2.3 Endodontics
+10.4.2.4 Periodontics
+10.4.2.5 Prosthodontics
+10.4.2.6 Pediatric Dentistry
+10.4.2.7 Dental Radiology
+10.4.2.8 Dental Anesthesiology
+10.4.2.9 Dental Materials Science
+10.4.2.10 Dental Public Health
+10.4.2.11 Dental Practice Management
+10.4.2.12 Dental Informatics
+10.4.3 Mental Health
+10.4.3.1 Psychotherapy
+10.4.3.1.1 Cognitive Behavioral Therapy (CBT)
+10.4.3.1.2 Dialectical Behavior Therapy (DBT)
+10.4.3.1.3 Psychoanalytic Therapy
+10.4.3.1.4 Humanistic Therapy
+10.4.3.2 Psychiatric Assessment
+10.4.3.3 Crisis Intervention
+10.4.3.4 Substance Abuse Counseling
+10.4.3.5 Family Therapy
+10.4.3.6 Group Therapy
+10.4.3.7 Art Therapy
+10.4.3.8 Play Therapy
+10.4.3.9 Trauma-Informed Care
+11 Humanities
+11.1 Languages
+11.1.1 English
+11.1.1.1 Reading Comprehension
+11.1.1.2 Vocabulary
+11.1.1.3 Listening Comprehension
+11.1.2 Spanish
+11.1.2.1 Spanish Grammar
+11.1.2.2 Spanish Vocabulary
+11.1.2.3 Spanish Conversation
+11.1.2.4 Spanish Writing
+11.1.2.5 Spanish Reading Comprehension
+11.1.2.6 Spanish Listening Comprehension
+11.1.2.7 Spanish Translation
+11.1.2.8 Spanish Interpretation
+11.1.3 French
+11.1.3.1 Speaking
+11.1.3.2 Pronunciation
+11.1.3.3 French Literature
+11.1.3.4 French Culture
+11.1.4 German
+11.1.4.1 German Grammar
+11.1.4.2 German Vocabulary
+11.1.4.3 German Conversation
+11.1.4.4 German Writing
+11.1.4.5 German Reading Comprehension
+11.1.4.6 German Listening Comprehension
+11.1.4.7 German Translation
+11.1.4.8 German Pronunciation
+11.1.5 Mandarin
+11.1.5.1 Reading
+11.1.5.2 Chinese Characters
+11.1.5.3 Tones
+11.1.5.4 Dialects
+11.1.5.4.1 Cantonese
+11.1.5.4.2 Hokkien
+11.1.5.4.3 Hakka
+11.1.5.4.4 Teochew
+11.1.6 Arabic
+11.1.6.1 Arabic Reading
+11.1.6.2 Arabic Writing
+11.1.6.3 Arabic Speaking
+11.1.6.4 Arabic Listening Comprehension
+11.1.6.5 Arabic Grammar
+11.1.6.6 Arabic Vocabulary
+11.1.6.7 Arabic Dialects
+11.1.6.7.1 Egyptian Arabic
+11.1.6.7.2 Levantine Arabic
+11.1.6.7.3 Gulf Arabic
+11.1.6.7.4 Moroccan Arabic
+11.1.6.8 Arabic Translation
+11.1.6.8.1 Arabic to English Translation
+11.1.6.8.2 English to Arabic Translation
+11.2 Literature
+11.2.1 Literary Analysis
+11.2.1.1 Critical Reading
+11.2.1.2 Close Reading
+11.2.1.3 Textual Analysis
+11.2.1.4 Literary Theory
+11.2.1.5 Literary Criticism
+11.2.1.6 Comparative Literature
+11.2.1.7 Literary Interpretation
+11.2.1.8 Literary Genres
+11.2.1.9 Literary Movements
+11.2.1.10 Literary Devices
+11.2.1.11 Literary Themes
+11.2.1.12 Literary Styles
+11.2.1.13 Literary Periods
+11.2.1.14 Literary Contexts
+11.3 History
+11.3.1 World History
+11.3.1.1 Ancient History
+11.3.1.1.1 Ancient Civilizations
+11.3.1.1.2 Archaeology
+11.3.1.1.3 Art History
+11.3.1.1.4 Classical Studies
+11.3.1.2 Medieval History
+11.3.1.2.1 European History
+11.3.1.2.2 Islamic History
+11.3.1.2.3 Asian History
+11.3.1.2.4 Religious Studies
+11.3.1.3 Modern History
+11.3.1.3.1 American History
+11.3.1.3.2 African History
+11.3.1.3.3 Political Science
+11.3.1.3.4 Economics
+11.4 Philosophy
+11.4.1 Ethics
+11.4.1.1 Moral Philosophy
+11.4.1.2 Normative Ethics
+11.4.1.2.1 Deontological Ethics
+11.4.1.2.2 Consequentialism
+11.4.1.2.3 Virtue Ethics
+11.4.1.3 Applied Ethics
+11.4.1.3.1 Bioethics
+11.4.1.3.2 Business Ethics
+11.4.1.3.3 Environmental Ethics
+11.4.1.3.4 Medical Ethics
+11.4.1.4 Metaethics
+11.4.2 Logic
+11.4.2.1 Deductive Reasoning
+11.4.2.2 Inductive Reasoning
+11.4.2.3 Formal Logic
+11.4.2.4 Symbolic Logic
+11.4.2.5 Propositional Logic
+11.4.2.6 Predicate Logic
+11.4.2.7 Modal Logic
+11.4.2.8 Fuzzy Logic
+11.4.2.9 Set Theory
+11.4.2.10 Argument Analysis
+11.4.2.11 Logical Fallacies
+11.4.3 Political Philosophy
+11.4.3.1 Political Theory
+11.4.3.2 Political Ideologies
+11.4.3.2.1 Liberalism
+11.4.3.2.2 Conservatism
+11.4.3.2.3 Socialism
+11.4.3.2.4 Anarchism
+11.4.3.3 Political Systems
+11.4.3.3.1 Democracy
+11.4.3.3.2 Authoritarianism
+11.4.3.3.3 Totalitarianism
+11.4.3.4 Political Institutions
+11.4.3.4.1 Government
+11.4.3.4.2 Elections
+11.4.3.4.3 Political Parties
+11.4.3.5 International Relations
+11.4.3.5.1 Foreign Policy
+11.4.3.5.2 Geopolitics
+11.4.4 Metaphysics
+11.4.4.1 Ontology
+11.4.4.2 Cosmology
+11.4.4.3 Philosophy of Mind
+11.4.4.4 Philosophy of Religion
+11.4.4.5 Philosophy of Science
+11.4.4.6 Philosophy of Language
+12 Law
+12.1 Legal Research
+12.1.1 Legal Writing
+12.1.2 Case Law Analysis
+12.1.3 Statutory Interpretation
+12.1.4 Legal Citation
+12.1.5 Legal Databases
+12.1.6 Legal Terminology
+12.1.7 Legal Ethics
+12.2 Contract Drafting
+12.2.1 Contract Review
+12.2.2 Due Diligence
+12.2.3 Dispute Resolution
+12.2.4 Intellectual Property Law
+12.3 Litigation
+12.3.1 Drafting Legal Documents
+12.3.2 Case Management
+12.3.3 Client Counseling
+12.3.4 Courtroom Advocacy
+12.3.5 Discovery
+12.3.6 Trial Preparation
+12.3.7 Appellate Practice
+12.3.8 Alternative Dispute Resolution
+12.4 Corporate Law
+12.4.1 Mergers and Acquisitions
+12.4.2 Corporate Governance
+12.4.3 Securities Law
+12.4.4 Tax Law
+12.4.5 Employment Law
+12.4.6 Commercial Litigation
+12.5 Real Estate Law
+12.5.1 Property Law
+12.5.2 Zoning Laws
+12.5.3 Title Examination
+12.5.4 Lease Agreements
+12.5.5 Mortgage Financing
+12.5.6 Land Use Regulations
+12.5.7 Real Estate Transactions
+12.5.8 Landlord-Tenant Law
+12.5.9 Environmental Law
+13 Listening
+13.1 Comprehension
+13.1.1 Following Instructions
+13.1.2 Multilingual Comprehension
+13.2 Nonverbal Communication
+13.3 Open-mindedness
+13.3.1 Respect for Diverse Perspectives
+13.3.2 Curiosity
+13.4 Questioning
+13.4.1 Open-Ended Questions
+13.4.2 Clarifying Questions
+13.4.3 Follow-Up Questions
+13.5 Summarizing
+13.5.1 Note-Taking
+13.5.2 Paraphrasing
+14 Manufacturing
+14.1 Production Planning
+14.1.1 Material Requirements Planning (MRP)
+14.1.2 Capacity Planning
+14.1.3 Lean Manufacturing
+14.2 Manufacturing Processes
+14.2.1 CNC Machining
+14.2.1.1 CNC Programming
+14.2.1.2 G-Code Programming
+14.2.1.3 CAD/CAM Software
+14.2.1.3.1 Mastercam
+14.2.1.4 CNC Machine Operation
+14.2.1.4.1 CNC Milling
+14.2.1.4.2 CNC Turning
+14.2.1.4.3 CNC Grinding
+14.2.1.5 CNC Machine Setup and Maintenance
+14.2.1.6 Tooling and Fixture Design
+14.2.1.7 Quality Control and Inspection
+14.2.1.8 Safety Procedures
+14.2.2 Injection Molding
+14.2.2.1 Plastic Injection Molding
+14.2.2.2 Cycle Time Optimization
+14.2.2.3 Material Selection
+14.2.2.4 Process Monitoring
+14.2.2.5 Mold Maintenance
+14.2.2.6 Injection Molding Machine Operation
+14.2.3 Assembly
+14.2.3.1 Manual Assembly
+14.2.3.2 Automated Assembly
+14.2.3.2.1 Robotic Assembly
+14.2.3.2.2 Conveyor Assembly
+14.2.3.3 Mechanical Assembly
+14.2.3.4 Electrical Assembly
+14.2.3.5 Packaging
+14.3 Industrial Safety
+14.3.1 Lockout/Tagout
+14.3.1.1 Energy Control Procedures
+14.3.1.2 Hazardous Energy Identification
+14.3.1.3 Lockout Devices
+14.3.1.4 Machine Guarding
+14.3.1.5 OSHA Regulations
+14.3.1.6 Permit Systems
+14.3.1.7 Safety Training
+14.3.2 Personal Protective Equipment (PPE)
+14.3.2.1 Hard Hats
+14.3.2.2 Safety Glasses
+14.3.2.3 Respirators
+14.3.2.4 Ear Plugs/Muffs
+14.3.2.5 Safety Harnesses
+14.3.2.6 Steel-Toed Boots
+14.3.2.7 Fire Resistant Clothing
+14.3.2.8 Chemical Resistant Gloves
+14.3.2.9 Fall Protection Equipment
+14.3.2.10 Lockout/Tagout Devices
+14.3.3 Hazard Identification and Control
+14.3.3.1 Safety Inspections
+14.3.3.2 Incident Investigation
+14.3.3.3 Hazardous Materials Handling
+14.3.3.4 Lockout/Tagout Procedures
+14.3.3.5 Confined Space Entry
+14.3.3.6 Fall Protection
+14.3.3.7 Ergonomics
+14.3.3.8 Emergency Response Planning
+14.4 Maintenance
+14.4.1 Preventive Maintenance
+14.4.1.1 Equipment Inspection
+14.4.1.2 Routine Maintenance
+14.4.1.3 Lubrication
+14.4.1.4 Cleaning
+14.4.1.5 Calibration
+14.4.1.6 Adjustment
+14.4.1.7 Repair
+14.4.1.8 Replacement
+14.4.1.9 Record Keeping
+15 Production
+15.1 Industrial Equipment Operation
+15.1.1 Forklift Operation
+15.1.2 Packaging Equipment Operation
+15.1.3 Assembly Line Operation
+15.2 Safety Practices
+15.2.1 Hazard Identification
+15.2.2 Emergency Response
+16 Public Safety
+16.1 Law Enforcement
+16.1.1 Criminal Investigation
+16.1.1.1 Evidence Collection
+16.1.1.1.1 Crime Scene Processing
+16.1.1.1.2 Chain of Custody
+16.1.1.1.3 Forensic Photography
+16.1.1.2 Interviewing Techniques
+16.1.1.2.1 Suspect Interrogation
+16.1.1.2.2 Witness Interviewing
+16.1.1.2.3 Statement Analysis
+16.1.1.3 Investigative Strategies
+16.1.1.3.1 Surveillance
+16.1.1.3.2 Undercover Operations
+16.1.1.3.3 Informant Handling
+16.1.1.4 Legal Knowledge
+16.1.1.4.1 Criminal Law
+16.1.1.4.2 Constitutional Law
+16.1.1.4.3 Rules of Evidence
+16.1.2 Patrol Procedures
+16.1.2.1 Traffic Control
+16.1.2.2 Suspect Apprehension
+16.1.2.3 Crowd Control
+16.1.2.4 Crime Scene Investigation
+16.1.2.5 Defensive Tactics
+16.1.2.6 Firearms Training
+16.1.2.7 Community Policing
+16.2 Fire and Rescue
+16.2.1 Fire Suppression
+16.2.1.1 Fire Behavior and Combustion
+16.2.1.2 Fire Extinguishing Agents and Equipment
+16.2.1.2.1 Fire Extinguishers
+16.2.1.2.2 Fire Hoses and Nozzles
+16.2.1.2.3 Foam Systems
+16.2.1.2.4 Water Supply Systems
+16.2.1.3 Fire Attack Techniques
+16.2.1.3.1 Ventilation
+16.2.1.3.2 Forcible Entry
+16.2.1.3.3 Overhaul Operations
+16.2.1.4 Rescue Operations
+16.2.1.4.1 Vehicle Extrication
+16.2.1.4.2 Rope Rescue
+16.2.1.4.3 Confined Space Rescue
+16.2.1.4.4 Trench Rescue
+16.2.1.4.5 Water Rescue
+16.2.1.5 Hazardous Materials Response
+16.2.1.6 Incident Command System
+16.2.1.7 Fire Prevention and Education
+16.2.1.8 Emergency Medical Services
+16.2.2 Technical Rescue
+16.2.2.1 Structural Collapse Rescue
+16.2.2.2 Vehicle and Machinery Rescue
+16.2.2.3 Wilderness Rescue
+16.2.2.4 Swift Water Rescue
+16.2.2.5 Ice Rescue
+16.2.2.6 Urban Search and Rescue (USAR)
+16.2.3 Fire Prevention
+16.2.3.1 Fire Code Compliance
+16.2.3.2 Fire Inspection
+16.2.3.3 Fire Safety Training
+16.2.3.4 Fire Hazard Analysis
+16.2.3.5 Fire Protection System Design
+16.2.3.6 Fire Evacuation Planning
+16.2.3.7 Fire Risk Assessment
+16.2.3.8 Fire Investigation
+16.3 Emergency Management
+16.3.1 Disaster Preparedness
+16.3.1.1 Emergency Planning
+16.3.1.2 Crisis Management
+16.3.1.3 Incident Response
+16.3.1.4 Evacuation Planning
+16.3.1.5 Emergency Communication
+16.3.1.6 Disaster Recovery
+16.3.1.7 Hazard Mitigation
+16.3.1.8 Emergency Operations Center Management
+16.3.2 Emergency Operations
+16.3.2.1 Disaster Recovery Planning
+16.3.2.2 Emergency Preparedness
+16.3.2.3 Resource Coordination
+16.3.2.4 Search and Rescue Operations
+16.3.3 Crisis Communication
+16.3.3.1 Public Relations
+16.3.3.2 Media Relations
+16.3.3.3 Risk Communication
+16.3.3.4 Crisis Response Planning
+16.3.3.5 Message Development
+16.3.3.6 Spokesperson Training
+16.3.3.7 Crisis Simulation Exercises
+16.3.4 Continuity Planning
+16.3.4.1 Business Impact Analysis
+16.3.4.2 Incident Management
+16.3.4.3 Contingency Planning
+17 Social
+17.1 Teamwork
+18 Transportation
+18.1 Trucking
+18.1.1 CDL Licensing
+18.1.1.1 Commercial Driver's License (CDL)
+18.1.1.2 Air Brakes Endorsement
+18.1.1.3 Tanker Endorsement
+18.1.1.4 Hazardous Materials Endorsement
+18.1.1.5 Defensive Driving
+18.1.1.6 Map Reading
+18.1.1.7 Vehicle Inspection
+18.1.1.8 Cargo Securement
+18.1.1.9 Hours of Service Regulations
+18.1.1.10 Logbook Maintenance
+18.1.2 Route Planning
+18.1.2.1 GPS Navigation
+18.1.2.2 Logistics Software
+18.1.2.3 Trip Planning
+18.1.2.4 Load Optimization
+18.1.2.5 Traffic Monitoring
+18.1.2.6 Fuel Management
+18.1.3 Cargo Handling
+18.1.3.1 Loading and Unloading
+18.1.3.2 Pallet Wrapping
+18.1.3.3 Freight Documentation
+18.1.4 Logbook Management
+18.1.4.1 Compliance
+18.1.4.2 Fuel Tax Reporting
+18.2 Aviation
+18.2.1 Pilot Licensing
+18.2.1.1 Commercial Pilot License (CPL)
+18.2.1.2 Airline Transport Pilot License (ATPL)
+18.2.1.3 Instrument Rating
+18.2.1.4 Multi-Engine Rating
+18.2.1.5 Type Ratings
+18.2.1.5.1 Boeing 737
+18.2.1.5.2 Airbus A320
+18.2.1.5.3 Cessna Citation
+18.2.1.6 Flight Experience
+18.2.1.6.1 Cross-Country Flight
+18.2.1.6.2 Night Flying
+18.2.1.6.3 Instrument Flight Rules (IFR)
+18.2.2 Aircraft Systems
+18.2.2.1 Avionics
+18.2.2.2 Hydraulic Systems
+18.2.2.3 Fuel Systems
+18.2.2.4 Environmental Control Systems
+18.2.2.5 Landing Gear Systems
+18.2.2.6 Flight Controls
+18.2.2.7 Powerplant Systems
+18.2.2.8 Airframe Systems
+18.2.2.9 Instrumentation
+18.2.3 Flight Operations
+18.2.3.1 Pilot Training
+18.2.3.1.1 Aircraft Systems Knowledge
+18.2.3.1.2 Visual Flight Rules (VFR)
+18.2.3.1.3 Crew Resource Management
+18.2.3.1.4 Emergency Procedures
+18.2.3.2 Air Traffic Control
+18.2.3.2.1 Airspace Management
+18.2.3.2.2 Communication Procedures
+18.2.3.2.3 Radar Operations
+18.2.3.2.4 Weather Monitoring
+18.2.3.3 Aircraft Maintenance
+18.2.3.3.1 Airframe Inspection
+18.2.3.3.2 Engine Maintenance
+18.2.3.3.3 Avionics Repair
+18.2.3.4 Flight Planning
+18.2.3.4.1 Navigation
+18.2.3.4.2 Weight and Balance Calculations
+18.2.3.4.3 Weather Analysis
+18.2.4 Aviation Regulations
+18.2.4.1 Aviation Law
+18.2.4.2 Aviation Safety
+18.2.4.3 Aviation Security
+18.3 Maritime
+18.3.1 Vessel Operations
+18.3.1.1 Cargo Operations
+18.3.1.1.1 Cargo Lashing
+18.3.1.1.2 Cargo Stowage
+18.3.1.2 Ship Maintenance
+18.3.1.2.1 Deck Maintenance
+18.3.1.2.2 Hull Maintenance
+18.3.2 Maritime Regulations
+18.3.2.1 International Maritime Organization (IMO) Regulations
+18.3.2.2 International Convention for the Safety of Life at Sea (SOLAS)
+18.3.2.3 International Convention for the Prevention of Pollution from Ships (MARPOL)
+18.3.2.4 International Ship and Port Facility Security (ISPS) Code
+18.3.2.5 Standards of Training, Certification and Watchkeeping (STCW)
+18.3.2.6 Cargo Handling and Stowage
+18.3.2.7 Maritime Labor Convention (MLC)
+18.3.2.8 Port State Control Inspections
+18.3.2.9 Flag State Regulations
+18.3.2.10 Coastal State Regulations
+18.3.3 Seamanship
+18.3.3.1 Watchkeeping
+18.3.3.2 Shipboard Safety
+18.3.3.2.1 Fire Prevention and Firefighting
+18.3.3.2.2 Survival Techniques
+18.3.3.2.3 First Aid
+18.3.3.3 Maritime Regulations and Conventions
+18.4 Public Transportation
+18.4.1 Bus Operations
+18.4.1.1 Dispatch Operations
+18.4.1.2 Vehicle Maintenance
+18.4.1.3 Driver Management
+18.4.1.3.1 Training
+18.4.1.3.2 Shift Management
+18.4.1.4 Safety Protocols
+18.4.1.5 Fare Collection
+18.4.2 Rail Operations
+18.4.2.1 Train Operations
+18.4.2.2 Railway Signaling
+18.4.2.3 Track Maintenance
+18.4.2.4 Locomotive Maintenance
+18.4.2.5 Rail Traffic Control
+18.4.2.6 Rail Safety Procedures
+18.4.2.7 Rail Scheduling
+18.4.2.8 Rail Dispatching
+18.4.2.9 Rail Yard Operations
+18.4.3 Passenger Services
+18.4.3.1 Ticketing
+18.4.3.2 Passenger Assistance
+18.4.3.3 Crowd Management
+18.4.3.4 Multilingual Communication
+18.4.3.5 Accessibility Assistance
+18.4.4 Transportation Regulations
+18.4.4.1 Traffic Laws
+18.4.4.2 Vehicle Safety Standards
+18.4.4.3 Emissions Regulations
+18.4.4.4 Licensing and Certification
+18.4.4.5 Transportation Planning
+18.4.4.6 Public Transit Operations
+18.4.4.7 Freight Regulations
