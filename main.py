@@ -22,7 +22,7 @@ from pydantic import (
     field_validator,
 )
 
-from src.jobstruct.prompts import Prompts
+from jobstruct.prompts import Prompts
 
 ########################################
 # CONFIGURATION / CONSTANTS
@@ -36,10 +36,10 @@ handler.setFormatter(formatter)
 logger.addHandler(handler)
 
 # Local directory with job Parquet files
-JOBS_PARQUET_DIR = "/path/to/location/of/parquet/job/table"
+JOBS_PARQUET_DIR = "/data/nlx/job"
 
 # Bedrock output bucket (S3)
-OUTPUT_BUCKET = "YOUR_OUTPUT_BUCKET_NAME"
+OUTPUT_BUCKET = "nlx-job-description-parsing-outputs"
 
 # Maximum concurrent batches to schedule
 MAX_CONCURRENT_JOBS = 2
@@ -51,10 +51,10 @@ BATCH_SIZE = 1000
 MAX_RETRIES = 1
 
 # How many days back from "today" to begin processing
-DEFAULT_LOOKBACK_DAYS = 30
+DEFAULT_LOOKBACK_DAYS = 40
 
 # SKILLS TAXONOMY
-with open("skills_taxonomy.txt", "r") as file:
+with open("skills_taxonomy.md", "r") as file:
     SKILLS_TAXONOMY = file.read()
 
 # GLOBAL DAY-BY-DAY STATE
@@ -66,12 +66,12 @@ s3_client = boto3.client("s3")
 
 # Model Selections
 EXTRACT_MODEL_ID = "anthropic.claude-3-haiku-20240307-v1:0"
-SKILLS_MODEL_ID = "anthropic.claude-3-5-sonnet-20240620-v1:0"
+SKILLS_MODEL_ID = "amazon.nova-pro-v1:0"
 # "amazon.nova-pro-v1:0"
 # "anthropic.claude-3-5-sonnet-20240620-v1:0"
 
-#AWS Bedrock Role ARN for executing batch jobs
-AWS_BEDROCK_ROLE_ARN = "arn:aws:iam::1234567890:role/your-bedrock-service-role-name"
+# Maximum number of skills to include in the skills parser output
+MAX_SKILLS_ITEMS = 25
 
 ########################################
 # Pydantic V2 Models (With Descriptions)
@@ -209,17 +209,16 @@ class ExtractSchema(BaseModel):
         default=False,
         description="Return true if the position offers remote work, otherwise return false."
     )
-    
+
 class SkillsSchema(RootModel[List[str]]):
     """
     Pydantic JSON model for the skills to be extracted from the job description.
-    Just a list (array) of skill strings.
     """
     model_config = ConfigDict(
         title="SkillsSchema",
-        description="Return a JSON list of skills from the provided taxonomy that includes both the code and the string (i.e. '2.9 Filing'), with no extra keys."
+        description="Return a JSON list of skills from the provided taxonomy."
     )
-
+    
 # Precompute the machine-readable JSON schemas
 extract_schema_json = json.dumps(ExtractSchema.model_json_schema(), indent=2)
 skills_schema_json = json.dumps(SkillsSchema.model_json_schema(), indent=2)
@@ -785,7 +784,9 @@ def parse_bedrock_jsonl_skills(jsonl_file: str) -> list[dict]:
                 continue
 
             row = {
+                "job_id": None,
                 "job_description_hash": record_id,
+                "title": "",
                 "skills": validated.root
             }
             results.append(row)
@@ -812,7 +813,7 @@ def process_prompt_loop(
     """
     active_batches = []
     done = False
-    role_arn = AWS_BEDROCK_ROLE_ARN
+    role_arn = "arn:aws:iam::214173262954:role/nlx-llm-bedrock-service-role"
 
     while not done:
         # Remove completed/failed from active list
@@ -953,7 +954,7 @@ def main(db_path: str = "nlx_jobs.duckdb"):
     start_date = datetime.utcnow() - timedelta(days=DEFAULT_LOOKBACK_DAYS)
 
     # 1) extract
-    process_prompt_loop(con, "extract", start_date)
+    # process_prompt_loop(con, "extract", start_date)
 
     # 2) skills
     process_prompt_loop(con, "skills", start_date)
