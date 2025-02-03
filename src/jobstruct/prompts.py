@@ -33,19 +33,17 @@ class Prompts:
 
     skills = dedent("""
         Your task is to read the job requirements in the <text></text> tags and map each given qualification to relevant skills
-        given within the <skills></skills> tags. Make sure to map each qualification and only include skills from the provided taxonomy. 
-        Read the qualification carefully and make the correct mapping to the given set of skills.
+        given within the <skills></skills> tags. Make sure to map each qualification from the job description and only include skills from the provided taxonomy. 
+        Read the qualifications in the job description carefully, and make the correct mapping to the given set of skills from the job description below:
         <text>
         {text}
         </text>
-        Understand the qualifications above and map them to this skills taxonomy:
+        Understand the qualifications from the job description above, and map them to this skills taxonomy below:
         <skills>
         {skills}
         </skills>
         Do not provide any rationale or explanation in your response. Only output valid JSON in the requested schema.
-        Skip the preamble and the explanation.
         Be careful, think, check your answers and only then return your response. 
-        You must not select skills at random, it must be through careful examination.
         ONLY INCLUDE SKILLS FROM THE PROVIDED SKILLS TAXONOMY.
         
         You must produce valid JSON that exactly matches the following Pydantic JSON schema:
