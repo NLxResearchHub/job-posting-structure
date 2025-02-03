@@ -1,0 +1,1385 @@
+# Accounting
+- **Financial Accounting**
+    - Accounts Payable
+    - Accounts Receivable
+    - Bookkeeping
+    - Financial Reporting
+    - General Ledger
+    - Payroll
+    - Tax Preparation
+    - Financial Analysis
+    - Auditing
+    - Cost Accounting
+    - Budget Management
+    - Financial Modeling
+- **Managerial Accounting**
+    - Budgeting
+    - Strategic Planning
+    - Risk Management
+    - Internal Controls
+    - Forecasting
+    - Variance Analysis
+- **Tax Accounting**
+    - Tax Planning
+    - Tax Compliance
+    - Tax Audits
+    - Tax Research
+    - Tax Software
+    - Tax Laws and Regulations
+    - Tax Accounting Methods
+    - Tax Reporting
+- **Budget Analysis**
+    - Budgeting Software
+        - Microsoft Excel
+        - Oracle Hyperion
+        - SAP Business Objects
+- **Accounting Software**
+    - Xero
+    - FreshBooks
+        - Expense Tracking
+        - Time Tracking
+        - Project Management
+        - Tax Management
+        - Payroll Management
+    - SAP
+        - SAP ERP
+        - SAP S/4HANA
+        - SAP FI/CO
+        - SAP MM
+        - SAP SD
+        - SAP PP
+        - SAP ABAP
+        - SAP Basis
+        - SAP Security
+        - SAP BI/BW
+        - SAP HANA
+    - Oracle
+        - Oracle E-Business Suite
+        - Oracle Financials
+        - Oracle Fusion Applications
+        - Oracle PeopleSoft
+        - SQL
+        - PL/SQL
+        - Database Administration
+        - Data Modeling
+# Administration
+- **Office Management**
+- **Records Management**
+- **Scheduling**
+- **Facilities Management**
+- **Event Planning**
+- **Customer Service**
+- **Filing**
+- **Typing**
+- **Human Resources**
+- **Procurement**
+- **Contract Management**
+# Analysis
+- **Data Analysis**
+    - Statistical Analysis
+    - Data Mining
+    - Data Visualization
+    - Predictive Modeling
+    - Machine Learning
+    - Python
+    - R
+    - Excel
+    - Tableau
+    - Power BI
+- **Business Analysis**
+    - Requirements Gathering
+    - Process Mapping
+    - Stakeholder Management
+    - Documentation
+    - Business Process Modeling
+    - Gap Analysis
+    - Root Cause Analysis
+    - Business Process Improvement
+    - Business Case Development
+- **Market Analysis**
+    - Competitive Analysis
+    - Industry Analysis
+    - Consumer Analysis
+    - Trend Analysis
+    - Pricing Analysis
+    - Demand Forecasting
+    - Market Segmentation
+    - Market Research
+- **Quantitative Analysis**
+    - Operations Research
+    - Econometrics
+- **Qualitative Analysis**
+    - Ethnographic Research
+    - Focus Groups
+    - In-Depth Interviews
+    - Observational Studies
+    - Content Analysis
+    - Thematic Analysis
+    - Grounded Theory
+    - Discourse Analysis
+    - Narrative Analysis
+    - Phenomenological Analysis
+- **Requirements Analysis**
+    - Elicitation Techniques
+    - Functional Requirements Gathering
+    - Non-Functional Requirements Gathering
+    - Prototyping
+    - Stakeholder Analysis
+    - Use Case Analysis
+    - User Experience (UX) Analysis
+- **Predictive Analytics**
+    - Statistical Modeling
+    - Clustering
+    - Decision Trees
+    - Neural Networks
+    - Ensemble Methods
+    - Dimensionality Reduction
+    - Anomaly Detection
+    - Optimization Techniques
+    - Simulation
+- **Exploratory Data Analysis**
+    - Data Cleaning
+    - Feature Engineering
+    - Correlation Analysis
+    - Clustering Analysis
+# Arts
+- **Visual Arts**
+    - Painting
+        - Oil Painting
+        - Acrylic Painting
+        - Watercolor Painting
+        - Pastel Painting
+        - Mural Painting
+        - Portrait Painting
+        - Landscape Painting
+        - Still Life Painting
+        - Abstract Painting
+        - Figurative Painting
+        - Color Theory
+        - Composition
+        - Brushwork Techniques
+        - Canvas Preparation
+        - Painting Materials Knowledge
+    - Drawing
+        - Sketching
+        - Illustration
+        - Figure Drawing
+        - Portraiture
+        - Still Life Drawing
+        - Landscape Drawing
+        - Cartooning
+        - Technical Drawing
+        - Perspective Drawing
+        - Gesture Drawing
+    - Sculpture
+        - Clay Modeling
+        - Carving
+        - Casting
+        - Welding
+        - Assemblage
+        - Stone Carving
+        - Wood Carving
+        - Metal Sculpting
+        - Figurative Sculpture
+        - Abstract Sculpture
+    - Photography
+        - Camera Operation
+        - Photo Editing
+            - Adobe Photoshop
+            - Adobe Lightroom
+            - Gimp
+        - Lighting Techniques
+        - Portrait Photography
+        - Landscape Photography
+        - Product Photography
+        - Event Photography
+        - Drone Photography
+    - Graphic Design
+        - Adobe Creative Suite
+        - Typography
+        - Layout Design
+        - Branding
+        - Print Design
+        - Web Design
+        - User Interface (UI) Design
+        - User Experience (UX) Design
+        - Concept Development
+        - Creativity
+        - Attention to Detail
+    - Animation
+        - 2D Animation
+        - 3D Animation
+        - Stop Motion Animation
+        - Character Animation
+        - Motion Graphics
+        - Rigging
+        - Compositing
+        - Animation Software
+            - Adobe Animate
+            - Toon Boom Harmony
+            - Autodesk Maya
+            - Blender
+            - Cinema 4D
+            - After Effects
+    - Video Production
+        - Video Editing
+            - Adobe Premiere Pro
+            - Final Cut Pro
+            - DaVinci Resolve
+        - Videography
+            - Lighting
+            - Audio Recording
+        - Scriptwriting
+        - Color Grading
+- **Performing Arts**
+    - Acting
+        - Stage Acting
+            - Character Development
+            - Voice Projection
+            - Stage Presence
+            - Script Analysis
+            - Improvisation
+        - Film Acting
+            - On-Camera Technique
+            - Emotional Range
+            - Script Interpretation
+            - Auditioning
+        - Voice Acting
+            - Voice Modulation
+            - Vocal Characterization
+            - Microphone Technique
+            - Dialogue Delivery
+    - Dance
+        - Ballet
+        - Contemporary
+        - Hip Hop
+        - Jazz
+        - Tap
+        - Choreography
+        - Dance Technique
+        - Dance Styles (e.g. Salsa, Ballroom, etc.)
+        - Dance Improvisation
+        - Dance Composition
+        - Dance History and Theory
+    - Music
+        - Instrumental Performance
+            - Piano
+            - Guitar
+            - Violin
+            - Drums
+            - Saxophone
+            - Flute
+        - Vocal Performance
+            - Singing
+            - Rapping
+            - Beatboxing
+        - Music Theory
+            - Sight Reading
+            - Harmony
+        - Music Production
+            - Audio Engineering
+            - Mixing
+            - Mastering
+            - Digital Audio Workstations (DAWs)
+    - Theater
+        - Directing
+        - Playwriting
+        - Stage Management
+        - Set Design
+        - Lighting Design
+        - Costume Design
+        - Makeup Artistry
+        - Stage Combat
+        - Voice and Diction
+        - Movement and Dance
+- **Literary Arts**
+    - Creative Writing
+        - Fiction Writing
+            - Novel Writing
+            - Short Story Writing
+        - Poetry Writing
+        - Non-Fiction Writing
+            - Essay Writing
+            - Article Writing
+            - Memoir Writing
+            - Journalism
+        - Editing and Proofreading
+        - Storytelling
+        - Copywriting
+        - Content Writing
+    - Poetry
+        - Poetic Techniques
+            - Rhyme
+            - Meter
+            - Imagery
+            - Figurative Language
+        - Poetry Analysis
+        - Poetry Recitation
+        - Poetry Genres
+            - Lyric Poetry
+            - Narrative Poetry
+            - Epic Poetry
+            - Dramatic Poetry
+# Business
+- **Management**
+    - Operations Management
+        - Supply Chain Management
+        - Logistics Management
+        - Quality Control
+        - Resource Planning
+        - Performance Monitoring
+    - Change Management
+        - Organizational Change
+        - Change Control
+        - Training and Development
+        - Agile Methodologies
+        - Lean Principles
+    - Team Leadership
+        - Delegation
+        - Motivation
+        - Conflict Resolution
+        - Performance Management
+        - Decision Making
+        - Communication
+        - Coaching and Mentoring
+- **Finance**
+- **Marketing**
+    - Digital Marketing
+        - Search Engine Optimization (SEO)
+        - Search Engine Marketing (SEM)
+        - Content Marketing
+        - Social Media Marketing
+        - Email Marketing
+        - Influencer Marketing
+        - Affiliate Marketing
+        - Video Marketing
+        - Analytics and Reporting
+        - Conversion Rate Optimization (CRO)
+        - Pay-Per-Click (PPC) Advertising
+        - Mobile Marketing
+        - Inbound Marketing
+        - Outbound Marketing
+- **Sales**
+    - Prospecting
+        - Lead Generation
+        - Cold Calling
+        - Networking
+        - Customer Relationship Management (CRM)
+        - Sales Pitch
+        - Objection Handling
+        - Negotiation
+        - Closing Techniques
+    - Client Relationship Management
+        - Account Management
+        - Sales Presentations
+        - Upselling and Cross-selling
+        - Customer Retention
+        - Sales Pipeline Management
+        - Customer Needs Analysis
+        - Sales Forecasting
+    - Sales Strategy
+        - Customer Segmentation
+        - Pricing Strategy
+        - Territory Management
+        - Sales Process Optimization
+        - Sales Enablement
+        - Sales Training
+        - Sales Coaching
+        - Sales Metrics and KPIs
+        - Sales Reporting and Analytics
+# Communications
+- **Written Communication**
+    - Report Writing
+        - Technical Writing
+        - Document Formatting
+- **Verbal Communication**
+    - Public Speaking
+        - Audience Engagement
+        - Body Language
+        - Impromptu Speaking
+        - Speech Writing
+        - Persuasive Communication
+    - Presentation Skills
+        - Visual Aids
+        - Q&A Handling
+        - Time Management
+        - Confidence
+        - Clarity of Speech
+    - Interpersonal Communication
+        - Clear Speech
+        - Empathy
+    - Negotiation Skills
+        - Bargaining
+- **Non-Verbal Communication**
+    - Tone of Voice
+        - Pitch Variation
+        - Volume Control
+        - Pace and Rhythm
+        - Emphasis and Inflection
+- **Cross-Cultural Communication**
+- **Teamwork and Collaboration**
+- **Training and Coaching**
+# Education
+- **Teaching**
+    - Lesson Planning
+    - Classroom Management
+    - Student Assessment
+    - Curriculum Development
+    - Educational Technology
+    - Differentiated Instruction
+    - Subject Knowledge
+        - Mathematics
+        - Science
+        - English Language Arts
+        - Social Studies
+        - Foreign Languages
+    - Special Education
+    - Early Childhood Education
+    - Adult Education
+    - Instructional Strategies
+    - Classroom Diversity and Inclusion
+- **Educational Administration**
+    - School Policy Development
+        - Policy Analysis
+        - Regulatory Compliance
+        - Budgeting and Finance
+        - Communication and Collaboration
+        - Leadership and Governance
+        - Professional Development
+        - Student Support Services
+        - Community Relations
+    - Staff Management
+        - Personnel Policies
+        - Recruitment and Hiring
+        - Compensation and Benefits
+        - Labor Relations
+        - Compliance with Regulations
+        - Diversity and Inclusion
+        - Employee Engagement
+# Engineering
+- **Software Engineering**
+    - Programming Languages
+        - Java
+            - Java SE
+            - Java EE
+            - Spring Framework
+            - Hibernate
+            - JSP
+            - Servlets
+            - Java Swing
+            - JavaFX
+            - Android Development
+            - Java Concurrency
+            - Java Collections Framework
+            - Java I/O
+            - Java Networking
+            - Java Security
+            - Java Web Services
+            - Java Persistence API (JPA)
+            - Java Database Connectivity (JDBC)
+            - Java Messaging Service (JMS)
+            - Java Naming and Directory Interface (JNDI)
+            - Java Management Extensions (JMX)
+        - C++
+            - Object-Oriented Programming
+            - Data Structures
+            - Algorithms
+            - Memory Management
+            - Pointers
+            - Templates
+            - Standard Template Library (STL)
+            - Multithreading
+            - File I/O
+            - Exception Handling
+            - Preprocessor Directives
+            - Debugging
+        - JavaScript
+            - React
+            - Angular
+            - Vue.js
+            - Node.js
+            - Express.js
+            - jQuery
+            - Webpack
+            - Babel
+            - ES6
+            - TypeScript
+            - AJAX
+            - JSON
+            - DOM Manipulation
+            - Asynchronous Programming
+            - Promises
+            - Closures
+            - Prototypes
+            - Event Handling
+            - Regular Expressions
+        - Ruby
+            - Ruby on Rails
+            - Ruby Gems
+            - Sinatra
+            - Rspec
+            - Capybara
+            - Rake
+            - Bundler
+            - ActiveRecord
+            - ActionView
+            - ActionController
+        - C#
+            - .NET Framework
+            - ASP.NET
+            - Windows Forms
+            - WPF (Windows Presentation Foundation)
+            - LINQ (Language Integrated Query)
+            - Entity Framework
+            - Web Services (WCF, Web API)
+            - Unit Testing (NUnit, MSTest)
+            - Object-Oriented Programming (OOP)
+    - Mobile Development
+        - iOS Development
+            - Swift
+                - Swift Fundamentals
+                - UIKit
+                - SwiftUI
+                - Core Data
+                - Concurrency
+                - Xcode
+                - Objective-C Interoperability
+                - Cocoa Touch
+                - Instruments
+                - TestFlight
+                - App Store Connect
+                - Push Notifications
+                - In-App Purchases
+                - Core Animation
+                - Core Graphics
+                - Core Location
+                - Core Motion
+                - AVFoundation
+                - MapKit
+                - CloudKit
+                - HealthKit
+                - ARKit
+                - Core ML
+                - Vision
+            - Objective-C
+                - Grand Central Dispatch
+                - Storyboards
+                - Auto Layout
+                - UI Testing
+    - Database Management
+        - NoSQL
+    - Version Control
+        - Git
+            - Git Branching
+            - Git Merging
+            - Git Commit
+            - Git Push
+            - Git Pull
+            - Git Rebase
+            - Git Stash
+            - Git Log
+            - Git Diff
+            - Git Checkout
+            - Git Reset
+            - Git Remote
+            - Git Submodules
+            - Git Hooks
+            - Git Workflows
+            - Git Collaboration
+            - Git Conflict Resolution
+- **Hardware Engineering**
+    - Electrical Engineering
+        - Circuit Design
+            - Analog Circuit Design
+            - Digital Circuit Design
+            - Mixed-Signal Circuit Design
+            - Power Electronics
+            - VLSI Design
+            - PCB Design
+            - Signal Integrity Analysis
+            - EMI/EMC Analysis
+            - Circuit Simulation
+            - Circuit Testing and Debugging
+        - Embedded Systems
+            - Microcontroller Programming
+            - Embedded C/C++
+            - Real-Time Operating Systems (RTOS)
+            - Firmware Development
+            - Hardware Interfacing
+            - Embedded Linux
+            - Embedded Software Testing
+            - Embedded Networking
+            - Power Management
+            - Embedded Security
+    - Mechanical Engineering
+        - CAD
+            - AutoCAD
+                - 2D Drafting
+                - 3D Modeling
+                - Architectural Design
+                - Mechanical Design
+                - Electrical Design
+                - Structural Design
+                - Rendering
+                - Annotation
+                - Dimensioning
+                - Block Creation
+                - Layer Management
+                - Plotting/Printing
+            - SolidWorks
+                - Drafting
+                - Assemblies
+                - Finite Element Analysis (FEA)
+                - Sheet Metal Design
+                - Mold Design
+                - Photorealistic Rendering
+                - Technical Drawings
+        - 3D Printing
+            - CAD Software (e.g. AutoCAD, SolidWorks)
+            - Additive Manufacturing Processes (e.g. FDM, SLA, SLS)
+            - Material Science (e.g. Plastics, Metals, Composites)
+            - Post-Processing Techniques (e.g. Sanding, Painting, Finishing)
+            - Slicing Software (e.g. Cura, Slic3r)
+            - Troubleshooting and Maintenance
+- **Civil Engineering**
+    - Structural Analysis
+        - Finite Element Analysis
+        - Structural Dynamics
+        - Reinforced Concrete Design
+        - Steel Design
+        - Seismic Analysis
+        - Structural Modeling
+        - Load Calculations
+        - Building Codes and Standards
+    - Construction Management
+        - Project Planning
+        - Cost Estimation
+        - Contract Administration
+        - Safety Management
+        - Construction Methods
+        - Construction Materials
+        - Construction Equipment
+        - Site Supervision
+        - Construction Drawings
+        - Building Codes and Regulations
+# Evaluation
+- **Metrics and Measurements**
+    - Key Performance Indicators (KPIs)
+        - Sales KPIs
+            - Revenue Growth
+            - Customer Acquisition Cost
+            - Customer Lifetime Value
+            - Sales Cycle Length
+            - Win Rate
+        - Marketing KPIs
+            - Website Traffic
+            - Conversion Rate
+            - Cost per Lead
+            - Return on Marketing Investment
+        - Financial KPIs
+            - Profitability
+            - Cash Flow
+            - Return on Investment
+            - Burn Rate
+        - Operations KPIs
+            - Productivity
+            - Cycle Time
+            - Defect Rate
+            - Inventory Turnover
+            - On-Time Delivery
+        - Human Resources KPIs
+            - Employee Retention Rate
+            - Time to Hire
+            - Training Effectiveness
+            - Employee Satisfaction
+            - Absenteeism Rate
+    - Return on Investment (ROI)
+        - Cost-Benefit Analysis
+        - Investment Appraisal
+        - Profitability Analysis
+        - Payback Period Calculation
+        - Net Present Value (NPV) Calculation
+        - Internal Rate of Return (IRR) Calculation
+        - Project Evaluation
+    - Conversion Rates
+        - Click-Through Rate (CTR)
+        - Cost per Acquisition (CPA)
+        - Cost per Click (CPC)
+        - Cost per Lead (CPL)
+        - Customer Acquisition Cost (CAC)
+        - Customer Lifetime Value (CLV)
+        - Email Open Rate
+        - Landing Page Conversion Rate
+        - Lead Conversion Rate
+        - Return on Ad Spend (ROAS)
+        - Shopping Cart Abandonment Rate
+        - User Engagement Metrics
+    - Customer Satisfaction Metrics
+        - Net Promoter Score (NPS)
+        - Customer Satisfaction Score (CSAT)
+        - Customer Effort Score (CES)
+        - Customer Churn Rate
+        - First Response Time
+        - Average Handle Time
+        - Customer Retention Rate
+- **Testing and Quality Assurance**
+    - Usability Testing
+        - User Experience (UX) Testing
+        - Heuristic Evaluation
+        - Accessibility Testing
+        - A/B Testing
+        - Usability Surveys and Interviews
+        - Eye Tracking
+        - Card Sorting
+        - User Persona Development
+        - Task Analysis
+    - Regression Testing
+        - Test Case Design
+        - Test Execution
+        - Defect Tracking
+        - Test Automation Tools
+            - Selenium
+            - Appium
+            - Katalon Studio
+            - TestComplete
+        - Test Management Tools
+            - TestRail
+            - qTest
+            - Zephyr
+    - Performance Testing
+        - Load Testing
+        - Stress Testing
+        - Endurance Testing
+        - Scalability Testing
+        - Reliability Testing
+        - Volume Testing
+        - Concurrency Testing
+        - Monitoring and Profiling
+        - Performance Tuning
+        - Performance Benchmarking
+        - Performance Testing Tools
+            - JMeter
+            - LoadRunner
+            - WebLoad
+            - NeoLoad
+            - Apache Bench (ab)
+            - Gatling
+            - Locust
+            - Tsung
+            - Siege
+- **Research Methods**
+    - Interviews
+        - Qualitative Interviews
+        - Structured Interviews
+        - Unstructured Interviews
+        - Focus Group Interviews
+        - Interview Analysis
+            - Coding
+    - Ethnographic Studies
+        - Participant Observation
+        - Field Notes
+        - Cultural Immersion
+        - Anthropology
+        - Sociology
+# Health
+- **Medical Knowledge**
+    - Anatomy
+        - Human Anatomy
+        - Anatomical Structures
+            - Skeletal System
+            - Muscular System
+            - Cardiovascular System
+            - Respiratory System
+            - Digestive System
+            - Nervous System
+            - Endocrine System
+            - Urinary System
+            - Reproductive System
+        - Physiology
+        - Pathology
+    - Medical Terminology
+        - Medical Abbreviations
+        - Medical Coding
+        - Medical Transcription
+- **Patient Care**
+    - Bedside Manner
+        - Patience
+        - Professionalism
+        - Compassion
+        - Respect for Patient Privacy
+        - Cultural Sensitivity
+    - Patient Education
+        - Health Literacy
+        - Treatment Adherence
+        - Medication Management
+        - Discharge Planning
+        - Self-Care Techniques
+        - Lifestyle Modifications
+        - Disease Prevention
+        - Nutrition Counseling
+        - Pain Management Education
+    - Emotional Support
+        - Stress Management
+        - Counseling
+        - Motivational Interviewing
+    - Cultural Competence
+        - Cross-cultural Communication
+        - Diversity Awareness
+        - Language Proficiency
+        - Inclusive Practices
+        - Respect for Cultural Differences
+        - Culturally Appropriate Care
+- **Healthcare Operations**
+    - Medical Billing
+        - Insurance Claims Processing
+        - Patient Billing
+        - Payment Posting
+        - Accounts Receivable Management
+        - HIPAA Compliance
+        - Electronic Health Records (EHR)
+        - CPT and ICD Coding
+        - Denial Management
+    - Healthcare Regulations
+        - Medicare/Medicaid Regulations
+        - Clinical Documentation
+        - Accreditation Standards
+        - Patient Privacy Laws
+        - Coding and Billing Regulations
+        - Quality Assurance Protocols
+        - Risk Management Procedures
+- **Specialized Areas**
+    - Nursing
+        - Specialized Care
+            - Pediatric Nursing
+            - Geriatric Nursing
+            - Critical Care Nursing
+            - Emergency Nursing
+        - Nursing Theories and Principles
+        - Continuing Education and Professional Development
+    - Dentistry
+        - Oral Surgery
+        - Orthodontics
+        - Endodontics
+        - Periodontics
+        - Prosthodontics
+        - Pediatric Dentistry
+        - Dental Radiology
+        - Dental Anesthesiology
+        - Dental Materials Science
+        - Dental Public Health
+        - Dental Practice Management
+        - Dental Informatics
+    - Mental Health
+        - Psychotherapy
+            - Cognitive Behavioral Therapy (CBT)
+            - Dialectical Behavior Therapy (DBT)
+            - Psychoanalytic Therapy
+            - Humanistic Therapy
+        - Psychiatric Assessment
+        - Crisis Intervention
+        - Substance Abuse Counseling
+        - Family Therapy
+        - Group Therapy
+        - Art Therapy
+        - Play Therapy
+        - Trauma-Informed Care
+# Humanities
+- **Languages**
+    - English
+        - Reading Comprehension
+        - Vocabulary
+        - Listening Comprehension
+    - Spanish
+        - Spanish Grammar
+        - Spanish Vocabulary
+        - Spanish Conversation
+        - Spanish Writing
+        - Spanish Reading Comprehension
+        - Spanish Listening Comprehension
+        - Spanish Translation
+        - Spanish Interpretation
+    - French
+        - Speaking
+        - Pronunciation
+        - French Literature
+        - French Culture
+    - German
+        - German Grammar
+        - German Vocabulary
+        - German Conversation
+        - German Writing
+        - German Reading Comprehension
+        - German Listening Comprehension
+        - German Translation
+        - German Pronunciation
+    - Mandarin
+        - Reading
+        - Chinese Characters
+        - Tones
+        - Dialects
+            - Cantonese
+            - Hokkien
+            - Hakka
+            - Teochew
+    - Arabic
+        - Arabic Reading
+        - Arabic Writing
+        - Arabic Speaking
+        - Arabic Listening Comprehension
+        - Arabic Grammar
+        - Arabic Vocabulary
+        - Arabic Dialects
+            - Egyptian Arabic
+            - Levantine Arabic
+            - Gulf Arabic
+            - Moroccan Arabic
+        - Arabic Translation
+            - Arabic to English Translation
+            - English to Arabic Translation
+- **Literature**
+    - Literary Analysis
+        - Critical Reading
+        - Close Reading
+        - Textual Analysis
+        - Literary Theory
+        - Literary Criticism
+        - Comparative Literature
+        - Literary Interpretation
+        - Literary Genres
+        - Literary Movements
+        - Literary Devices
+        - Literary Themes
+        - Literary Styles
+        - Literary Periods
+        - Literary Contexts
+- **History**
+    - World History
+        - Ancient History
+            - Ancient Civilizations
+            - Archaeology
+            - Art History
+            - Classical Studies
+        - Medieval History
+            - European History
+            - Islamic History
+            - Asian History
+            - Religious Studies
+        - Modern History
+            - American History
+            - African History
+            - Political Science
+            - Economics
+- **Philosophy**
+    - Ethics
+        - Moral Philosophy
+        - Normative Ethics
+            - Deontological Ethics
+            - Consequentialism
+            - Virtue Ethics
+        - Applied Ethics
+            - Bioethics
+            - Business Ethics
+            - Environmental Ethics
+            - Medical Ethics
+        - Metaethics
+    - Logic
+        - Deductive Reasoning
+        - Inductive Reasoning
+        - Formal Logic
+        - Symbolic Logic
+        - Propositional Logic
+        - Predicate Logic
+        - Modal Logic
+        - Fuzzy Logic
+        - Set Theory
+        - Argument Analysis
+        - Logical Fallacies
+    - Political Philosophy
+        - Political Theory
+        - Political Ideologies
+            - Liberalism
+            - Conservatism
+            - Socialism
+            - Anarchism
+        - Political Systems
+            - Democracy
+            - Authoritarianism
+            - Totalitarianism
+        - Political Institutions
+            - Government
+            - Elections
+            - Political Parties
+        - International Relations
+            - Foreign Policy
+            - Geopolitics
+    - Metaphysics
+        - Ontology
+        - Cosmology
+        - Philosophy of Mind
+        - Philosophy of Religion
+        - Philosophy of Science
+        - Philosophy of Language
+# Law
+- **Legal Research**
+    - Legal Writing
+    - Case Law Analysis
+    - Statutory Interpretation
+    - Legal Citation
+    - Legal Databases
+    - Legal Terminology
+    - Legal Ethics
+- **Contract Drafting**
+    - Contract Review
+    - Due Diligence
+    - Dispute Resolution
+    - Intellectual Property Law
+- **Litigation**
+    - Drafting Legal Documents
+    - Case Management
+    - Client Counseling
+    - Courtroom Advocacy
+    - Discovery
+    - Trial Preparation
+    - Appellate Practice
+    - Alternative Dispute Resolution
+- **Corporate Law**
+    - Mergers and Acquisitions
+    - Corporate Governance
+    - Securities Law
+    - Tax Law
+    - Employment Law
+    - Commercial Litigation
+- **Real Estate Law**
+    - Property Law
+    - Zoning Laws
+    - Title Examination
+    - Lease Agreements
+    - Mortgage Financing
+    - Land Use Regulations
+    - Real Estate Transactions
+    - Landlord-Tenant Law
+    - Environmental Law
+# Listening
+- **Comprehension**
+    - Following Instructions
+    - Multilingual Comprehension
+- **Nonverbal Communication**
+- **Open-mindedness**
+    - Respect for Diverse Perspectives
+    - Curiosity
+- **Questioning**
+    - Open-Ended Questions
+    - Clarifying Questions
+    - Follow-Up Questions
+- **Summarizing**
+    - Note-Taking
+    - Paraphrasing
+# Manufacturing
+- **Production Planning**
+    - Material Requirements Planning (MRP)
+    - Capacity Planning
+    - Lean Manufacturing
+- **Manufacturing Processes**
+    - CNC Machining
+        - CNC Programming
+        - G-Code Programming
+        - CAD/CAM Software
+            - Mastercam
+        - CNC Machine Operation
+            - CNC Milling
+            - CNC Turning
+            - CNC Grinding
+        - CNC Machine Setup and Maintenance
+        - Tooling and Fixture Design
+        - Quality Control and Inspection
+        - Safety Procedures
+    - Injection Molding
+        - Plastic Injection Molding
+        - Cycle Time Optimization
+        - Material Selection
+        - Process Monitoring
+        - Mold Maintenance
+        - Injection Molding Machine Operation
+    - Assembly
+        - Manual Assembly
+        - Automated Assembly
+            - Robotic Assembly
+            - Conveyor Assembly
+        - Mechanical Assembly
+        - Electrical Assembly
+        - Packaging
+- **Industrial Safety**
+    - Lockout/Tagout
+        - Energy Control Procedures
+        - Hazardous Energy Identification
+        - Lockout Devices
+        - Machine Guarding
+        - OSHA Regulations
+        - Permit Systems
+        - Safety Training
+    - Personal Protective Equipment (PPE)
+        - Hard Hats
+        - Safety Glasses
+        - Respirators
+        - Ear Plugs/Muffs
+        - Safety Harnesses
+        - Steel-Toed Boots
+        - Fire Resistant Clothing
+        - Chemical Resistant Gloves
+        - Fall Protection Equipment
+        - Lockout/Tagout Devices
+    - Hazard Identification and Control
+        - Safety Inspections
+        - Incident Investigation
+        - Hazardous Materials Handling
+        - Lockout/Tagout Procedures
+        - Confined Space Entry
+        - Fall Protection
+        - Ergonomics
+        - Emergency Response Planning
+- **Maintenance**
+    - Preventive Maintenance
+        - Equipment Inspection
+        - Routine Maintenance
+        - Lubrication
+        - Cleaning
+        - Calibration
+        - Adjustment
+        - Repair
+        - Replacement
+        - Record Keeping
+# Production
+- **Industrial Equipment Operation**
+    - Forklift Operation
+    - Packaging Equipment Operation
+    - Assembly Line Operation
+- **Safety Practices**
+    - Hazard Identification
+    - Emergency Response
+# Public Safety
+- **Law Enforcement**
+    - Criminal Investigation
+        - Evidence Collection
+            - Crime Scene Processing
+            - Chain of Custody
+            - Forensic Photography
+        - Interviewing Techniques
+            - Suspect Interrogation
+            - Witness Interviewing
+            - Statement Analysis
+        - Investigative Strategies
+            - Surveillance
+            - Undercover Operations
+            - Informant Handling
+        - Legal Knowledge
+            - Criminal Law
+            - Constitutional Law
+            - Rules of Evidence
+    - Patrol Procedures
+        - Traffic Control
+        - Suspect Apprehension
+        - Crowd Control
+        - Crime Scene Investigation
+        - Defensive Tactics
+        - Firearms Training
+        - Community Policing
+- **Fire and Rescue**
+    - Fire Suppression
+        - Fire Behavior and Combustion
+        - Fire Extinguishing Agents and Equipment
+            - Fire Extinguishers
+            - Fire Hoses and Nozzles
+            - Foam Systems
+            - Water Supply Systems
+        - Fire Attack Techniques
+            - Ventilation
+            - Forcible Entry
+            - Overhaul Operations
+        - Rescue Operations
+            - Vehicle Extrication
+            - Rope Rescue
+            - Confined Space Rescue
+            - Trench Rescue
+            - Water Rescue
+        - Hazardous Materials Response
+        - Incident Command System
+        - Fire Prevention and Education
+        - Emergency Medical Services
+    - Technical Rescue
+        - Structural Collapse Rescue
+        - Vehicle and Machinery Rescue
+        - Wilderness Rescue
+        - Swift Water Rescue
+        - Ice Rescue
+        - Urban Search and Rescue (USAR)
+    - Fire Prevention
+        - Fire Code Compliance
+        - Fire Inspection
+        - Fire Safety Training
+        - Fire Hazard Analysis
+        - Fire Protection System Design
+        - Fire Evacuation Planning
+        - Fire Risk Assessment
+        - Fire Investigation
+- **Emergency Management**
+    - Disaster Preparedness
+        - Emergency Planning
+        - Crisis Management
+        - Incident Response
+        - Evacuation Planning
+        - Emergency Communication
+        - Disaster Recovery
+        - Hazard Mitigation
+        - Emergency Operations Center Management
+    - Emergency Operations
+        - Disaster Recovery Planning
+        - Emergency Preparedness
+        - Resource Coordination
+        - Search and Rescue Operations
+    - Crisis Communication
+        - Public Relations
+        - Media Relations
+        - Risk Communication
+        - Crisis Response Planning
+        - Message Development
+        - Spokesperson Training
+        - Crisis Simulation Exercises
+    - Continuity Planning
+        - Business Impact Analysis
+        - Incident Management
+        - Contingency Planning
+# Social
+- **Teamwork**
+# Transportation
+- **Trucking**
+    - CDL Licensing
+        - Commercial Driver's License (CDL)
+        - Air Brakes Endorsement
+        - Tanker Endorsement
+        - Hazardous Materials Endorsement
+        - Defensive Driving
+        - Map Reading
+        - Vehicle Inspection
+        - Cargo Securement
+        - Hours of Service Regulations
+        - Logbook Maintenance
+    - Route Planning
+        - GPS Navigation
+        - Logistics Software
+        - Trip Planning
+        - Load Optimization
+        - Traffic Monitoring
+        - Fuel Management
+    - Cargo Handling
+        - Loading and Unloading
+        - Pallet Wrapping
+        - Freight Documentation
+    - Logbook Management
+        - Compliance
+        - Fuel Tax Reporting
+- **Aviation**
+    - Pilot Licensing
+        - Commercial Pilot License (CPL)
+        - Airline Transport Pilot License (ATPL)
+        - Instrument Rating
+        - Multi-Engine Rating
+        - Type Ratings
+            - Boeing 737
+            - Airbus A320
+            - Cessna Citation
+        - Flight Experience
+            - Cross-Country Flight
+            - Night Flying
+            - Instrument Flight Rules (IFR)
+    - Aircraft Systems
+        - Avionics
+        - Hydraulic Systems
+        - Fuel Systems
+        - Environmental Control Systems
+        - Landing Gear Systems
+        - Flight Controls
+        - Powerplant Systems
+        - Airframe Systems
+        - Instrumentation
+    - Flight Operations
+        - Pilot Training
+            - Aircraft Systems Knowledge
+            - Visual Flight Rules (VFR)
+            - Crew Resource Management
+            - Emergency Procedures
+        - Air Traffic Control
+            - Airspace Management
+            - Communication Procedures
+            - Radar Operations
+            - Weather Monitoring
+        - Aircraft Maintenance
+            - Airframe Inspection
+            - Engine Maintenance
+            - Avionics Repair
+        - Flight Planning
+            - Navigation
+            - Weight and Balance Calculations
+            - Weather Analysis
+    - Aviation Regulations
+        - Aviation Law
+        - Aviation Safety
+        - Aviation Security
+- **Maritime**
+    - Vessel Operations
+        - Cargo Operations
+            - Cargo Lashing
+            - Cargo Stowage
+        - Ship Maintenance
+            - Deck Maintenance
+            - Hull Maintenance
+    - Maritime Regulations
+        - International Maritime Organization (IMO) Regulations
+        - International Convention for the Safety of Life at Sea (SOLAS)
+        - International Convention for the Prevention of Pollution from Ships (MARPOL)
+        - International Ship and Port Facility Security (ISPS) Code
+        - Standards of Training, Certification and Watchkeeping (STCW)
+        - Cargo Handling and Stowage
+        - Maritime Labor Convention (MLC)
+        - Port State Control Inspections
+        - Flag State Regulations
+        - Coastal State Regulations
+    - Seamanship
+        - Watchkeeping
+        - Shipboard Safety
+            - Fire Prevention and Firefighting
+            - Survival Techniques
+            - First Aid
+        - Maritime Regulations and Conventions
+- **Public Transportation**
+    - Bus Operations
+        - Dispatch Operations
+        - Vehicle Maintenance
+        - Driver Management
+            - Training
+            - Shift Management
+        - Safety Protocols
+        - Fare Collection
+    - Rail Operations
+        - Train Operations
+        - Railway Signaling
+        - Track Maintenance
+        - Locomotive Maintenance
+        - Rail Traffic Control
+        - Rail Safety Procedures
+        - Rail Scheduling
+        - Rail Dispatching
+        - Rail Yard Operations
+    - Passenger Services
+        - Ticketing
+        - Passenger Assistance
+        - Crowd Management
+        - Multilingual Communication
+        - Accessibility Assistance
+    - Transportation Regulations
+        - Traffic Laws
+        - Vehicle Safety Standards
+        - Emissions Regulations
+        - Licensing and Certification
+        - Transportation Planning
+        - Public Transit Operations
+        - Freight Regulations
