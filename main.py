@@ -20,6 +20,7 @@ from pydantic import (
     RootModel,
     ValidationError,
     field_validator,
+    conlist
 )
 
 from jobstruct.prompts import Prompts
@@ -163,7 +164,14 @@ class ExtractSchema(BaseModel):
     )
     pay_range: Optional[List[Optional[float]]] = Field(
         default_factory=list,
-        description="Return a list with the USD pay range of the position as floating point numbers, formatted with no commas or dollar signs, if this information exists in the job description."
+        description="""Return a list with ONLY the minimum and maximum USD pay range of the position as floating point numbers, formatted with no commas or dollar signs, if this information exists in the job description.
+        
+If multiple pay ranges appear in the job description, use the minimum and maximum across ALL pay ranges.
+
+If the median or average pay appears in the job description, please only return the minimum and maximum values available.
+
+If only one value for the pay range appears in the job description, please only return that value.
+"""
     )
     @field_validator("pay_range", mode="before")
     def clean_pay_range(cls, value):
@@ -197,13 +205,9 @@ class ExtractSchema(BaseModel):
         default=False,
         description="Return true if the position is an entry-level job, otherwise return false."
     )
-    college_degree: Optional[bool] = Field(
+    part_time: Optional[bool] = Field(
         default=False,
-        description="Return true if the position requires a college degree or equivalent, otherwise return false."
-    )
-    full_time: Optional[bool] = Field(
-        default=False,
-        description="Return true if the position is full-time, otherwise return false."
+        description="Return true if the position is part-time, otherwise return false."
     )
     remote: Optional[bool] = Field(
         default=False,
@@ -254,8 +258,7 @@ def init_duckdb(db_path: str = ":memory:") -> duckdb.DuckDBPyConnection:
             pay_max DECIMAL(10, 2),
             pay_unit TEXT,
             entry_level BOOLEAN,
-            college_degree BOOLEAN,
-            full_time BOOLEAN,
+            part_time BOOLEAN,
             remote BOOLEAN,
             skills TEXT[],
             extract_at TIMESTAMP,
@@ -403,8 +406,7 @@ def duckdb_upsert_extract(
             pay_max = s.pay_max,
             pay_unit = s.pay_unit,
             entry_level = s.entry_level,
-            college_degree = s.college_degree,
-            full_time = s.full_time,
+            part_time = s.part_time,
             remote = s.remote,
             extract_at = s.extract_at
         FROM _extract_stage s
@@ -741,8 +743,7 @@ def parse_bedrock_jsonl_extract(jsonl_file: str) -> list[dict]:
                 "pay_max": pay_max,
                 "pay_unit": validated.pay_unit,
                 "entry_level": validated.entry_level,
-                "college_degree": validated.college_degree,
-                "full_time": validated.full_time,
+                "part_time": validated.part_time,
                 "remote": validated.remote,
             }
             results.append(row)
