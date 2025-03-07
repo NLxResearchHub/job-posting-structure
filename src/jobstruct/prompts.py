@@ -20,7 +20,7 @@ class Prompts:
          2. Identify all sentences that describe the job duties, responsibilities, or requirements, including any details that are not explicitly labeled as such.
          3. **Important Step** : Ensure you capture all details related to the job duties and job requirements even if they are not clearly labeled. Do not miss out on any information indirectly present in the job posting. Some general job related sentences can qualify as job duties if you pay close attention.
          4. Do not make any assumptions or leave out any details.
-         5. Present the final JSON output exactly as specified in the Pydantic JSON schema, without any truncation, summarization, or modification of the original text.
+         5. Present the final JSON output exactly as specified in the Pydantic JSON schema, without any assumptions, inference, truncation, summarization, or modification of the original text.
         </instructions>
         <text>
         {text}

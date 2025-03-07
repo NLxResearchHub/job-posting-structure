@@ -1,29 +1,19 @@
 import json
 import logging
 import os
-import re
 import sys
 import time
 from datetime import datetime, timedelta
-from enum import Enum
 from hashlib import sha256
-from typing import List, Optional
 
 import boto3
 import duckdb
 import pandas as pd
 import pyarrow as pa
-from pydantic import (
-    BaseModel,
-    ConfigDict,
-    Field,
-    RootModel,
-    ValidationError,
-    field_validator,
-    conlist
-)
+from pydantic import ValidationError
 
 from jobstruct.prompts import Prompts
+from schemas import ExtractSchema, SkillsSchema, ExtractBreakoutSchema
 
 ########################################
 # CONFIGURATION / CONSTANTS
@@ -38,9 +28,6 @@ logger.addHandler(handler)
 
 # Local directory with job Parquet files
 JOBS_PARQUET_DIR = "/data/nlx/job"
-
-# Bedrock output bucket (S3)
-OUTPUT_BUCKET = "nlx-job-description-parsing-outputs"
 
 # Maximum concurrent batches to schedule
 MAX_CONCURRENT_JOBS = 2
@@ -61,170 +48,44 @@ with open("skills_taxonomy.md", "r") as file:
 # GLOBAL DAY-BY-DAY STATE
 _DAY_STATE = {"current_day": None}
 
-# AWS clients
-bedrock_client = boto3.client("bedrock")
-s3_client = boto3.client("s3")
+# SET EDUCATION PARSING TYPE
+EDUCATION_TYPE = 'Breakout'
+#Bundled
 
 # Model Selections
-EXTRACT_MODEL_ID = "anthropic.claude-3-haiku-20240307-v1:0"
+EXTRACT_MODEL_ID = "anthropic.claude-3-5-haiku-20241022-v1:0"
+# 
+# "anthropic.claude-3-haiku-20240307-v1:0"
+# "anthropic.claude-3-5-sonnet-20240620-v1:0"
 SKILLS_MODEL_ID = "amazon.nova-pro-v1:0"
 # "amazon.nova-pro-v1:0"
 # "anthropic.claude-3-5-sonnet-20240620-v1:0"
 
+if "3-5-haiku" in EXTRACT_MODEL_ID:
+    # AWS clients
+    bedrock_client = boto3.client("bedrock",
+                                 region_name='us-west-2')
+    s3_client = boto3.client("s3",
+                            region_name='us-west-2')
+    # Bedrock output bucket (S3)
+    INPUT_BUCKET = "nlx-job-description-parsing-inputs-west-2"
+    OUTPUT_BUCKET = "nlx-job-description-parsing-outputs-west-2"
+else:
+    # AWS clients
+    bedrock_client = boto3.client("bedrock",
+                                 region_name='us-east-1')
+    s3_client = boto3.client("s3",
+                            region_name='us-east-1')
+    # Bedrock output bucket (S3)
+    INPUT_BUCKET = "nlx-job-description-parsing-inputs"
+    OUTPUT_BUCKET = "nlx-job-description-parsing-outputs"
+
 # Maximum number of skills to include in the skills parser output
 MAX_SKILLS_ITEMS = 25
-
-########################################
-# Pydantic V2 Models (With Descriptions)
-########################################
-
-class EducationLevel(str, Enum):
-    less_than_high_school = "Less than High School"  # For roles requiring no formal education or some high school
-    high_school = "High School Diploma or Equivalent"  # For roles requiring a high school diploma or equivalent
-    associates_degree = "Associate's or 2 year Degree"  # For roles requiring a 2-year college degree
-    bachelors_degree = "Bachelor's or 4 year Degree"  # For roles requiring a standard 4-year college degree
-    masters_degree = "Master's Degree"  # For roles requiring advanced postgraduate education
-    doctoral_degree = "Doctoral Degree"  # For roles requiring the highest academic degree (e.g., Ph.D., MD, JD)
-    other = "Other"  # For roles with education requirements not fitting standard categories
-
-class RequiredPreferred(BaseModel):
-    """
-    This sub-model defines fields for required or preferred qualifications.
-    """
-
-    model_config = ConfigDict(
-        extra="ignore",
-        title="RequiredPreferred",
-        description=(
-            "Defines the required or preferred qualifications (education, major, etc.)."
-        )
-    )
-
-    education: Optional[EducationLevel] = Field(
-        default=None,
-        description=(
-            "Return the lowest educational level required or preferred. \n"
-            "Acceptable values include: \n"
-            "- Less than High School \n"
-            "- High School Diploma or Equivalent \n"
-            "- Associate's or 2 year Degree \n"
-            "- Bachelor's or 4 year Degree \n"
-            "- Master's Degree \n"
-            "- Doctoral Degree \n"
-            "- Other \n"
-            "Note: 'Doctoral Degree' includes PhD, JD, and MD. \n" 
-            "Note: 'Other' includes all other educational requirements and should only be used if the required or preferred education in the job description is known and no other acceptable value is correct."
-        )
-    )
-    major: Optional[List[str]] = Field(
-        default_factory=list,
-        description="Return a list of required/preferred majors or areas of study."
-    )
-    experience: Optional[int] = Field(
-        default=None,
-        description="Return the required or preferred years of experience as an integer."
-    )
-    qualifications: Optional[List[str]] = Field(
-        default_factory=list,
-        description="Return a list of all required/preferred qualifications, abilities, knowledge, skills, certifications, training, and licenses."
-    )
-
-class ExtractSchema(BaseModel):
-    """
-    Pydantic model for information to be extracted from the job description in JSON format.
-    """
-    
-    model_config = ConfigDict(
-        extra="ignore",
-        title="ExtractSchema",
-        description=(
-            "This schema represents all fields to extract from the job description."
-        )
-    )
-
-    job_title: Optional[str] = Field(
-        default=None,
-        description="Return the job title."
-    )
-    details: Optional[List[str]] = Field(
-        default_factory=list,
-        description="Return a list of all duties and responsibilities associated with the job. Include all information."
-    )
-    required: Optional[RequiredPreferred] = Field(
-        default_factory=dict,
-        description="Return the required fields such as education, major, experience, qualifications."
-    )
-    preferred: Optional[RequiredPreferred] = Field(
-        default=None,
-        description="Return the preferred fields such as education, major, experience, qualifications."
-    )
-    benefits: Optional[List[str]] = Field(
-        default=None,
-        description="Return a list of the benefits offered."
-    )
-    pay_range: Optional[List[Optional[float]]] = Field(
-        default_factory=list,
-        description="""Return a list with ONLY the minimum and maximum USD pay range of the position as floating point numbers, formatted with no commas or dollar signs, if this information exists in the job description.
-        
-If multiple pay ranges appear in the job description, use the minimum and maximum across ALL pay ranges.
-
-If the median or average pay appears in the job description, please only return the minimum and maximum values available.
-
-If only one value for the pay range appears in the job description, please only return that value.
-"""
-    )
-    @field_validator("pay_range", mode="before")
-    def clean_pay_range(cls, value):
-        if value is None:
-            return value
-        if isinstance(value, list):
-            cleaned_values = []
-            for item in value:
-                if item is None:
-                    cleaned_values.append(None)
-                elif isinstance(item, str):
-                    cleaned_item = re.sub(r"[^\d.]", "", item)
-                    if cleaned_item:
-                        try:
-                            cleaned_values.append(float(cleaned_item))
-                        except ValueError:
-                            raise ValueError(f"Invalid value in pay_range: {item}")
-                    else:
-                        raise ValueError(f"Invalid value in pay_range: {item}")
-                elif isinstance(item, (int, float)):
-                    cleaned_values.append(float(item))
-                else:
-                    raise ValueError(f"Unexpected type in pay_range: {type(item).__name__}")
-            return cleaned_values
-        return value
-    pay_unit: Optional[str] = Field(
-        default="unknown",
-        description="Return the best value from the set (annual, monthly, weekly, daily, hourly, other, unknown)."
-    )
-    entry_level: Optional[bool] = Field(
-        default=False,
-        description="Return true if the position is an entry-level job, otherwise return false."
-    )
-    part_time: Optional[bool] = Field(
-        default=False,
-        description="Return true if the position is part-time, otherwise return false."
-    )
-    remote: Optional[bool] = Field(
-        default=False,
-        description="Return true if the position offers remote work, otherwise return false."
-    )
-
-class SkillsSchema(RootModel[List[str]]):
-    """
-    Pydantic JSON model for the skills to be extracted from the job description.
-    """
-    model_config = ConfigDict(
-        title="SkillsSchema",
-        description="Return a JSON list of skills from the provided taxonomy."
-    )
     
 # Precompute the machine-readable JSON schemas
 extract_schema_json = json.dumps(ExtractSchema.model_json_schema(), indent=2)
+extract_breakout_schema_json = json.dumps(ExtractBreakoutSchema.model_json_schema(), indent=2)
 skills_schema_json = json.dumps(SkillsSchema.model_json_schema(), indent=2)
 
 ########################################
@@ -238,34 +99,70 @@ def init_duckdb(db_path: str = ":memory:") -> duckdb.DuckDBPyConnection:
     """
     con = duckdb.connect(db_path)
 
-    con.execute(
-        """
-        CREATE TABLE IF NOT EXISTS job_extract (
-            job_id INT NOT NULL,
-            job_description_hash TEXT NOT NULL,
-            title TEXT ,
-            details TEXT,
-            required_education TEXT,
-            required_major TEXT,
-            required_experience SMALLINT,
-            required_qualifications TEXT,
-            preferred_education TEXT,
-            preferred_major TEXT,
-            preferred_experience SMALLINT,
-            preferred_qualifications TEXT,
-            benefits TEXT,
-            pay_min DECIMAL(10, 2),
-            pay_max DECIMAL(10, 2),
-            pay_unit TEXT,
-            entry_level BOOLEAN,
-            part_time BOOLEAN,
-            remote BOOLEAN,
-            skills TEXT[],
-            extract_at TIMESTAMP,
-            skills_at TIMESTAMP
-        );
-        """
-    )
+
+    if EDUCATION_TYPE == 'Breakout':
+        con.execute(
+            """
+            CREATE TABLE IF NOT EXISTS job_extract (
+                job_id INT NOT NULL,
+                job_description_hash TEXT NOT NULL,
+                job_title TEXT ,
+                details TEXT,
+                high_school_diploma_or_equivalent TEXT,
+                vocational_or_technical_degree TEXT,
+                associates_or_2_year_degree TEXT,
+                bachelors_or_four_year_degree TEXT,
+                masters_degree TEXT,
+                doctoral_degree_including_jd_md TEXT,
+                required_preferred_major TEXT,
+                required_preferred_experience SMALLINT,
+                required_preferred_qualifications TEXT,
+                benefits TEXT,
+                pay_min DECIMAL(10, 2),
+                pay_max DECIMAL(10, 2),
+                pay_unit TEXT,
+                entry_level_up_to_3_years_experience TEXT,
+                part_time TEXT,
+                remote TEXT,
+                soc_occupation_code TEXT,
+                skills TEXT[],
+                extract_at TIMESTAMP,
+                skills_at TIMESTAMP
+            );
+            """
+        )
+
+
+    else:
+        con.execute(
+            """
+            CREATE TABLE IF NOT EXISTS job_extract (
+                job_id INT NOT NULL,
+                job_description_hash TEXT NOT NULL,
+                job_title TEXT ,
+                details TEXT,
+                required_education TEXT,
+                required_major TEXT,
+                required_experience SMALLINT,
+                required_qualifications TEXT,
+                preferred_education TEXT,
+                preferred_major TEXT,
+                preferred_experience SMALLINT,
+                preferred_qualifications TEXT,
+                benefits TEXT,
+                pay_min DECIMAL(10, 2),
+                pay_max DECIMAL(10, 2),
+                pay_unit TEXT,
+                entry_level TEXT,
+                part_time TEXT,
+                remote TEXT,
+                soc_occupation_code TEXT,
+                skills TEXT[],
+                extract_at TIMESTAMP,
+                skills_at TIMESTAMP
+            );
+            """
+        )
 
     con.execute(
         """
@@ -382,36 +279,73 @@ def duckdb_upsert_extract(
     df = pd.DataFrame(rows)
     df["extract_at"] = now_ts
     df = validate_and_prepare_for_decimal(df, ["pay_max","pay_min"])
-    df = convert_to_integers_with_range(df, ["required_experience","preferred_experience"])
+    
+    if EDUCATION_TYPE == 'Breakout':
+        df = convert_to_integers_with_range(df, ["required_preferred_experience"])
+    else:
+        df = convert_to_integers_with_range(df, ["required_experience","preferred_experience"])
+        
     arrow_table = pa.Table.from_pandas(df)
 
     con.execute("CREATE TEMP TABLE _extract_stage AS SELECT * FROM arrow_table;")
 
-    # Update existing records
-    con.execute("""
-        UPDATE job_extract t
-        SET 
-            title = s.title,
-            details = s.details,
-            required_education = s.required_education,
-            required_major = s.required_major,
-            required_experience = s.required_experience,
-            required_qualifications = s.required_qualifications,
-            preferred_education = s.preferred_education,
-            preferred_major = s.preferred_major,
-            preferred_experience = s.preferred_experience,
-            preferred_qualifications = s.preferred_qualifications,
-            benefits = s.benefits,
-            pay_min = s.pay_min,
-            pay_max = s.pay_max,
-            pay_unit = s.pay_unit,
-            entry_level = s.entry_level,
-            part_time = s.part_time,
-            remote = s.remote,
-            extract_at = s.extract_at
-        FROM _extract_stage s
-        WHERE t.job_description_hash = s.job_description_hash;
-    """)
+
+    if EDUCATION_TYPE == 'Breakout':
+        # Update existing records
+        con.execute("""
+            UPDATE job_extract t
+            SET 
+                job_title = s.job_title,
+                details = s.details,
+                high_school_diploma_or_equivalent = s.high_school_diploma_or_equivalent,
+                vocational_or_technical_degree = s.vocational_or_technical_degree,
+                associates_or_2_year_degree = s.associates_or_2_year_degree,
+                bachelors_or_four_year_degree = s.bachelors_or_four_year_degree,
+                masters_degree = s.masters_degree,
+                doctoral_degree_including_jd_md = s.doctoral_degree_including_jd_md,
+                required_preferred_major = s.required_preferred_major,
+                required_preferred_experience = s.required_preferred_experience,
+                required_preferred_qualifications = s.required_preferred_qualifications,
+                benefits = s.benefits,
+                pay_min = s.pay_min,
+                pay_max = s.pay_max,
+                pay_unit = s.pay_unit,
+                entry_level_up_to_3_years_experience = s.entry_level_up_to_3_years_experience,
+                part_time = s.part_time,
+                remote = s.remote,
+                soc_occupation_code = s.soc_occupation_code,
+                extract_at = s.extract_at
+            FROM _extract_stage s
+            WHERE t.job_description_hash = s.job_description_hash;
+        """)
+
+    else:
+        # Update existing records
+        con.execute("""
+            UPDATE job_extract t
+            SET 
+                job_title = s.job_title,
+                details = s.details,
+                required_education = s.required_education,
+                required_major = s.required_major,
+                required_experience = s.required_experience,
+                required_qualifications = s.required_qualifications,
+                preferred_education = s.preferred_education,
+                preferred_major = s.preferred_major,
+                preferred_experience = s.preferred_experience,
+                preferred_qualifications = s.preferred_qualifications,
+                benefits = s.benefits,
+                pay_min = s.pay_min,
+                pay_max = s.pay_max,
+                pay_unit = s.pay_unit,
+                entry_level = s.entry_level,
+                part_time = s.part_time,
+                remote = s.remote,
+                soc_occupation_code = s.soc_occupation_code,
+                extract_at = s.extract_at
+            FROM _extract_stage s
+            WHERE t.job_description_hash = s.job_description_hash;
+        """)
 
     con.execute("DROP TABLE _extract_stage;")
 
@@ -548,7 +482,11 @@ def create_jsonl_for_prompt(
     logger.info(f"Creating JSONL for prompt: {prompt_type} -> {output_file}")
 
     if prompt_type == "extract":
-        schema_str = extract_schema_json
+        if EDUCATION_TYPE == 'Breakout':
+            schema_str = extract_breakout_schema_json
+        else:
+            schema_str = extract_schema_json
+            
         base_prompt = Prompts.extract
         system_text = (
             "You are an expert in job description analysis and data extraction. "
@@ -633,7 +571,7 @@ def create_bedrock_job(
     model_id: str = "anthropic.claude-3-haiku-20240307-v1:0"
 ) -> dict:
     logger.info(f"Creating Bedrock job for {prompt_type}: {job_name}")
-    input_s3_url = f"s3://nlx-job-description-parsing-inputs/batch/inputs/{os.path.basename(input_jsonl_path)}"
+    input_s3_url = f"s3://{INPUT_BUCKET}/batch/inputs/{os.path.basename(input_jsonl_path)}"
     output_s3_url = f"s3://{OUTPUT_BUCKET}/batch/outputs/{job_name}/"
 
     input_data_config = {"s3InputDataConfig": {"s3Uri": input_s3_url}}
@@ -710,7 +648,10 @@ def parse_bedrock_jsonl_extract(jsonl_file: str) -> list[dict]:
 
             # 3) Attempt to parse directly via model_validate_json
             try:
-                validated = ExtractSchema.model_validate_json(text_str)
+                if EDUCATION_TYPE == 'Breakout':
+                    validated = ExtractBreakoutSchema.model_validate_json(text_str)
+                else:
+                    validated = ExtractSchema.model_validate_json(text_str)
             except ValidationError as ve:
                 logger.warning(f"[extract] ValidationError for record {record_id}:\n{ve}")
                 continue
@@ -726,26 +667,51 @@ def parse_bedrock_jsonl_extract(jsonl_file: str) -> list[dict]:
             elif len(validated.pay_range or []) >= 2:
                 pay_min, pay_max = validated.pay_range[0], validated.pay_range[1]
 
-            row = {
-                "job_description_hash": record_id,
-                "title": (validated.job_title or "").strip(),
-                "details": "\n".join(validated.details or []),
-                "required_education": validated.required.education.value if validated.required and validated.required.education else None,
-                "required_major": ", ".join(validated.required.major) if validated.required and validated.required.major else "",
-                "required_experience": validated.required.experience if validated.required else 0,
-                "required_qualifications": ", ".join(validated.required.qualifications) if validated.required and validated.required.qualifications else "",
-                "preferred_education": validated.preferred.education.value if validated.preferred and validated.preferred.education else None,
-                "preferred_major": ", ".join(validated.preferred.major) if validated.preferred and validated.preferred.major else "",
-                "preferred_experience": validated.preferred.experience if validated.preferred else 0,
-                "preferred_qualifications": ", ".join(validated.preferred.qualifications) if validated.preferred and validated.preferred.qualifications else "",
-                "benefits": ", ".join(validated.benefits) if validated.benefits else None,
-                "pay_min": pay_min,
-                "pay_max": pay_max,
-                "pay_unit": validated.pay_unit,
-                "entry_level": validated.entry_level,
-                "part_time": validated.part_time,
-                "remote": validated.remote,
-            }
+            if EDUCATION_TYPE == 'Breakout':
+                row = {
+                    "job_description_hash": record_id,
+                    "job_title": (validated.job_title or "").strip(),
+                    "details": "\n".join(validated.details or []),
+                    "high_school_diploma_or_equivalent": validated.required_preferred.high_school_diploma_or_equivalent if validated.required_preferred else "Not mentioned",
+                    "vocational_or_technical_degree": validated.required_preferred.vocational_or_technical_degree if validated.required_preferred else "Not mentioned",
+                    "associates_or_2_year_degree": validated.required_preferred.associates_or_2_year_degree if validated.required_preferred else "Not mentioned",
+                    "bachelors_or_four_year_degree": validated.required_preferred.bachelors_or_four_year_degree if validated.required_preferred else "Not mentioned",
+                    "masters_degree": validated.required_preferred.masters_degree if validated.required_preferred else "Not mentioned",
+                    "doctoral_degree_including_jd_md": validated.required_preferred.doctoral_degree_including_jd_md  if validated.required_preferred else "Not mentioned",
+                    "required_preferred_major": ", ".join(validated.required_preferred.major) if validated.required_preferred and validated.required_preferred.major else "",
+                    "required_preferred_experience": validated.required_preferred.experience if validated.required_preferred else 0,
+                    "required_preferred_qualifications": ", ".join(validated.required_preferred.qualifications) if validated.required_preferred and validated.required_preferred.qualifications else "",
+                    "benefits": ", ".join(validated.benefits) if validated.benefits else None,
+                    "pay_min": pay_min,
+                    "pay_max": pay_max,
+                    "pay_unit": validated.pay_unit,
+                    "entry_level_up_to_3_years_experience": validated.entry_level_up_to_3_years_experience,
+                    "part_time": validated.part_time,
+                    "remote": validated.remote,
+                    "soc_occupation_code": validated.soc_occupation_code,
+                }
+            else:
+                row = {
+                    "job_description_hash": record_id,
+                    "job_title": (validated.job_title or "").strip(),
+                    "details": "\n".join(validated.details or []),
+                    "required_education": validated.required.education.value if validated.required and validated.required.education else None,
+                    "required_major": ", ".join(validated.required.major) if validated.required and validated.required.major else "",
+                    "required_experience": validated.required.experience if validated.required else 0,
+                    "required_qualifications": ", ".join(validated.required.qualifications) if validated.required and validated.required.qualifications else "",
+                    "preferred_education": validated.preferred.education.value if validated.preferred and validated.preferred.education else None,
+                    "preferred_major": ", ".join(validated.preferred.major) if validated.preferred and validated.preferred.major else "",
+                    "preferred_experience": validated.preferred.experience if validated.preferred else 0,
+                    "preferred_qualifications": ", ".join(validated.preferred.qualifications) if validated.preferred and validated.preferred.qualifications else "",
+                    "benefits": ", ".join(validated.benefits) if validated.benefits else None,
+                    "pay_min": pay_min,
+                    "pay_max": pay_max,
+                    "pay_unit": validated.pay_unit,
+                    "entry_level": validated.entry_level,
+                    "part_time": validated.part_time,
+                    "remote": validated.remote,
+                    "soc_occupation_code": validated.soc_occupation_code,
+                }
             results.append(row)
     return results
 
@@ -785,9 +751,7 @@ def parse_bedrock_jsonl_skills(jsonl_file: str) -> list[dict]:
                 continue
 
             row = {
-                "job_id": None,
                 "job_description_hash": record_id,
-                "title": "",
                 "skills": validated.root
             }
             results.append(row)
@@ -834,7 +798,7 @@ def process_prompt_loop(
             else:
                 create_jsonl_for_prompt(df, local_jsonl, prompt_type, SKILLS_MODEL_ID)
 
-            input_s3_uri = f"s3://nlx-job-description-parsing-inputs/batch/inputs/{os.path.basename(local_jsonl)}"
+            input_s3_uri = f"s3://{INPUT_BUCKET}/batch/inputs/{os.path.basename(local_jsonl)}"
             upload_to_s3(local_jsonl, input_s3_uri)
 
             if prompt_type == "extract":
@@ -955,10 +919,10 @@ def main(db_path: str = "nlx_jobs.duckdb"):
     start_date = datetime.utcnow() - timedelta(days=DEFAULT_LOOKBACK_DAYS)
 
     # 1) extract
-    # process_prompt_loop(con, "extract", start_date)
+    process_prompt_loop(con, "extract", start_date)
 
     # 2) skills
-    process_prompt_loop(con, "skills", start_date)
+    # process_prompt_loop(con, "skills", start_date)
 
     logger.info("All prompts processed. Exiting.")
 
