@@ -13,7 +13,7 @@ import pyarrow as pa
 from pydantic import ValidationError
 
 from jobstruct.prompts import Prompts
-from schemas import ExtractSchema, SkillsSchema, ExtractBreakoutSchema
+from schemas import ExtractBreakoutSchema, ExtractSchema, SkillsSchema
 
 ########################################
 # CONFIGURATION / CONSTANTS
@@ -54,8 +54,8 @@ EDUCATION_TYPE = 'Breakout'
 
 # Model Selections
 EXTRACT_MODEL_ID = "anthropic.claude-3-5-haiku-20241022-v1:0"
-# 
 # "anthropic.claude-3-haiku-20240307-v1:0"
+# 
 # "anthropic.claude-3-5-sonnet-20240620-v1:0"
 SKILLS_MODEL_ID = "amazon.nova-pro-v1:0"
 # "amazon.nova-pro-v1:0"
@@ -125,6 +125,7 @@ def init_duckdb(db_path: str = ":memory:") -> duckdb.DuckDBPyConnection:
                 part_time TEXT,
                 remote TEXT,
                 soc_occupation_code TEXT,
+                naics_code TEXT,
                 skills TEXT[],
                 extract_at TIMESTAMP,
                 skills_at TIMESTAMP
@@ -314,6 +315,7 @@ def duckdb_upsert_extract(
                 part_time = s.part_time,
                 remote = s.remote,
                 soc_occupation_code = s.soc_occupation_code,
+                naics_code = s.naics_code,
                 extract_at = s.extract_at
             FROM _extract_stage s
             WHERE t.job_description_hash = s.job_description_hash;
@@ -543,7 +545,7 @@ def create_jsonl_for_prompt(
                     "max_new_tokens": 4096,
                     "temperature": 0.0,
                     "top_p": 0.9,
-                    "top_k": 250
+                    "top_k": 128
                 }
             }
 
@@ -689,6 +691,7 @@ def parse_bedrock_jsonl_extract(jsonl_file: str) -> list[dict]:
                     "part_time": validated.part_time,
                     "remote": validated.remote,
                     "soc_occupation_code": validated.soc_occupation_code,
+                    "naics_code": validated.naics_code,
                 }
             else:
                 row = {

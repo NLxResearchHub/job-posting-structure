@@ -13,14 +13,11 @@ class Prompts:
     """
 
     extract = dedent("""
-        Your task is to read the job posting inside the <text></text> tags and accurately extract relevant information in the Pydantic JSON model shown in <schema></schema>. Be very careful. Follow the instructions to perform the task.
+        Your task is to read the job post inside the <text></text> tags and accurately extract relevant information in the Pydantic JSON schema shown in <schema></schema>.
         <instructions>
-        Think step-by-step.
-         1. Read the job posting carefully and thoroughly, line by line.
-         2. Identify all sentences that describe the job duties, responsibilities, or requirements, including any details that are not explicitly labeled as such.
-         3. **Important Step** : Ensure you capture all details related to the job duties and job requirements even if they are not clearly labeled. Do not miss out on any information indirectly present in the job posting. Some general job related sentences can qualify as job duties if you pay close attention.
-         4. Do not make any assumptions or leave out any details.
-         5. Present the final JSON output exactly as specified in the Pydantic JSON schema, without any assumptions, inference, truncation, summarization, or modification of the original text.
+         1. Read the job post carefully and thoroughly, line by line.
+         2. Do not make any assumptions or leave out any details.
+         3. Extract the information according to the instructions in, and in the format of, the Pydantic JSON schema.
         </instructions>
         <text>
         {text}

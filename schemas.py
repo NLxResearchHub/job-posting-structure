@@ -110,18 +110,14 @@ EDUCATION_ORDER = {
 class DegreeOptions(str, Enum):
     not_mentioned = "Not mentioned"
     required = "Required"
-    preferred_or_can_be_substituted = "Preferred/Can be substituted with experience"
-    other = "Other"
+    mentioned_but_not_required = "Mentioned but not required"
 
 # Mapping of truncated names to enum values
 DEGREE_MAPPING = {
     "req": DegreeOptions.required,
-    "pref": DegreeOptions.preferred_or_can_be_substituted,
-    "sub":  DegreeOptions.preferred_or_can_be_substituted,
-    "exper": DegreeOptions.preferred_or_can_be_substituted,
-    "another": DegreeOptions.other,
-    "addition": DegreeOptions.other,
-    "mention": DegreeOptions.not_mentioned,
+    "pref": DegreeOptions.mentioned_but_not_required,
+    "not req": DegreeOptions.mentioned_but_not_required,
+    "not mention": DegreeOptions.not_mentioned,
 }
 
 class PayUnit(str, Enum):
@@ -186,6 +182,10 @@ def clean_soc_code(soc_code):
     Clean and standardize a SOC code to a 6-digit format without hyphens.
     """
     return "".join(filter(str.isdigit, soc_code))
+
+def clean_naics_code(value: str) -> str:
+    """Helper function to clean and validate NAICS code format."""
+    return "".join(filter(str.isdigit, value))[:6]  # Extract first 6 digits
 
 class RequiredPreferred(BaseModel):
     """
@@ -286,13 +286,62 @@ class RequiredPreferredBreakout(BaseModel):
             "Defines the required or preferred attributes of a job candidate (education, major, experience, and qualifications)."
         )
     )
+    bachelors_or_four_year_degree: Optional[DegreeOptions] = Field(
+        default=DegreeOptions.not_mentioned,
+        description=(
+            "Example references to a Bachelor's Degree include:  Bachelor's, Bachelor of Arts, "
+            "Bachelor of Science, BA, BS, BSc, BSN, College Degree, Higher Education, "
+            "or any general undergraduate degree mentioned in the job post. \n"
+            "Return 'Required' if the job explicitly requires a Bachelor's Degree or one of the alternative references. "
+            "Examples of 'Required' include: \n"
+            "\t- 'Required Qualifications: \s+ Bachelor's degree' \n"
+            "\t- 'Job Requirements: \s+ Bachelor's degree in relevant field' \n"
+            "\t- 'What you'll bring: \s+ Relevant College degree'. \n"
+            "\t- 'BS degree or equivalent; advanced degree desirable.'. \n"
+            "Return 'Mentioned but not required' if a bachelor's or an alternative reference is mentioned but not explicitly required. "
+            "Examples of 'Mentioned but not required' include: \n"
+            "\t- ANY indication that experience or training will be accepted in place of a bachelor's degree"
+            "\t- 'Bachelor's degree preferred' \n"
+            "\t- 'Bachelors Degree (or relevant years of experience)' \n"
+            "\t- 'Bachelor's degree in related field or equivalent experience' \n"
+            "\t- '* Preferred Qualifications \n * Education \n * Bachelor of Science in [Field]' \n"
+            "\t- 'Bachelor's degree or equivalent practical experience'. \n"
+            "\t- 'Preferred but not required qualifications include: Bachelor of Arts degree' \n"
+            "\t- 'Some Higher Education or college credits preferred' \n"
+            "\t- 'Working toward a bachelors degree' \n"
+            "DOUBLE CHECK TO SEE IF A BACHELORS DEGREE REFERENCE IS PRESENT IN THE JOB DESCRIPTION. IF A BACHELORS DEGREE IS PRESENT AND NOT REQUIRED, THEN IT IS 'Mentioned but not required'. \n"
+            "Return 'Not mentioned' if no mention is made to this degree or its alternative references."
+        )
+    )
+    
+    @field_validator("bachelors_or_four_year_degree", mode="before")
+    def validate_bachelors_or_four_year_degree(cls, value):
+        if value is None:
+            return "Not mentioned"
+        
+        if isinstance(value, DegreeOptions):
+            return value
+        
+        if isinstance(value, str):
+            if value.lower() == 'required':
+                return DegreeOptions.required
+            elif "mentioned but not" in value.lower():
+                return DegreeOptions.mentioned_but_not_required 
+            else:
+                return DegreeOptions.not_mentioned
+            
+        return DegreeOptions.not_mentioned
 
     high_school_diploma_or_equivalent: Optional[DegreeOptions] = Field(
         default=DegreeOptions.not_mentioned,
         description=(
-            "For High School Diploma or Equivalent: Return 'Required' if the job description explicitly states that a High School Diploma or Equivalent is mandatory; "
-            "return 'Preferred/Can be substituted with experience' if it is mentioned as preferred or can be substituted with work experience; "
-            "return 'Other' if a non-standard requirement is specified; otherwise, return 'Not mentioned' if there is no explicit mention."
+            "Example references to a High School Diploma or Equivalent include: "
+            "'High School Diploma or equivalent' (not equivalent experience), "
+            "'GED', 'General education degree', "
+            "or any general high school degree mentioned in the job post. "
+            "For High School Diploma or Equivalent: Return 'Required' if the job description explicitly states that a High School Diploma or Equivalent or alternative reference is mandatory for the role. "
+            "Return 'Mentioned but not required' if high school education is mentioned as preferred, can be substituted with work experience, or is mentioned but isn't explicitly required. "
+            "Return 'Not mentioned' if no mention is made to this degree or its alternative references."
         )
     )
     @field_validator("high_school_diploma_or_equivalent", mode="before")
@@ -304,11 +353,10 @@ class RequiredPreferredBreakout(BaseModel):
             return value
         
         if isinstance(value, str):
-            value_lower = value.lower().strip()
-            matches = [v for k, v in DEGREE_MAPPING.items() if k in value_lower]
-
-            if len(matches) == 1:
-                return matches[0]
+            if value.lower() == 'required':
+                return DegreeOptions.required
+            elif "mentioned but not" in value.lower():
+                return DegreeOptions.mentioned_but_not_required
             else:
                 return DegreeOptions.not_mentioned
             
@@ -317,9 +365,13 @@ class RequiredPreferredBreakout(BaseModel):
     vocational_or_technical_degree: Optional[DegreeOptions] = Field(
         default=DegreeOptions.not_mentioned,
         description=(
-            "For Vocational or Technical Degree: Return 'Required' if the job description mandates vocational or technical training or certification; "
-            "return 'Preferred/Can be substituted with experience' if such training is noted as a preference or can be substituted with experience; "
-            "return 'Other' if an alternative qualification is indicated; otherwise, return 'Not mentioned' if no details are provided. "
+            "References to a Vocational or Technical Degree include: "
+            "'Accredited school of nursing', 'Technical school', 'Trade School', "
+            "'Phlebotomy program', 'Medical Assistant program', "
+            "or any general vocational or technical degree mentioned in the job post. "
+            "For Vocational or Technical Degree: Return 'Required' if the job description requires vocational or technical training or certification or any alternative references to this degree. "
+            "Return 'Mentioned but not required' if the vocational or technical degree is noted as a preference, can be substituted with experience, or is mentioned but isn't explicitly required. "
+            "Return 'Not mentioned' if no mention is made to this degree. "
         )
     )
     @field_validator("vocational_or_technical_degree", mode="before")
@@ -331,11 +383,10 @@ class RequiredPreferredBreakout(BaseModel):
             return value
         
         if isinstance(value, str):
-            value_lower = value.lower().strip()
-            matches = [v for k, v in DEGREE_MAPPING.items() if k in value_lower]
-
-            if len(matches) == 1:
-                return matches[0]
+            if value.lower() == 'required':
+                return DegreeOptions.required
+            elif "mentioned but not" in value.lower():
+                return DegreeOptions.mentioned_but_not_required
             else:
                 return DegreeOptions.not_mentioned
             
@@ -344,10 +395,11 @@ class RequiredPreferredBreakout(BaseModel):
     associates_or_2_year_degree: Optional[DegreeOptions] = Field(
         default=DegreeOptions.not_mentioned,
         description=(
-            "This refers to any Associate's or general undergraduate degree mentioned in the job description. "
-            "Return 'Required' if the job explicitly requires an Associate's or 2-year degree; "
-            "return 'Preferred/Can be substituted with experience' if the degree is preferred but may be substituted with relevant experience; "
-            "return 'Other' if a different alternative is provided; otherwise, return 'Not mentioned' if not specified. "
+             "References to an Associate's Degree include: "
+            "'Associate's degree', 'College degree', and 'Higher education'."
+            "Return 'Required' if the job explicitly requires an Associate's or 2-year degree or alternative reference noted here. "
+            "Return 'Mentioned but not required' if the degree is preferred, may be substituted with relevant experience, or is mentioned but isn't explicitly required. "
+            "Return 'Not mentioned' if no mention is made to this degree or its alternative references. "
         )
     )
     @field_validator("associates_or_2_year_degree", mode="before")
@@ -359,39 +411,10 @@ class RequiredPreferredBreakout(BaseModel):
             return value
         
         if isinstance(value, str):
-            value_lower = value.lower().strip()
-            matches = [v for k, v in DEGREE_MAPPING.items() if k in value_lower]
-
-            if len(matches) == 1:
-                return matches[0]
-            else:
-                return DegreeOptions.not_mentioned
-            
-        return DegreeOptions.not_mentioned
-        
-    bachelors_or_four_year_degree: Optional[DegreeOptions] = Field(
-        default=DegreeOptions.not_mentioned,
-        description=(
-            "This refers to any Bachelor's, Bachelor of Arts, Bachelor of Science , or general undergraduate degree mentioned in the job description. "
-            "Return 'Required' if the job mandates a bachelor's degree; "
-            "return 'Preferred/Can be substituted with experience' if a bachelor's is preferred or can be substituted with work experience; "
-            "return 'Other' if a non-standard requirement is mentioned; otherwise, return 'Not mentioned' if no explicit information is provided about a bachelor's degree. "
-        )
-    )
-    @field_validator("bachelors_or_four_year_degree", mode="before")
-    def validate_bachelors_or_four_year_degree(cls, value):
-        if value is None:
-            return "Not mentioned"
-        
-        if isinstance(value, DegreeOptions):
-            return value
-        
-        if isinstance(value, str):
-            value_lower = value.lower().strip()
-            matches = [v for k, v in DEGREE_MAPPING.items() if k in value_lower]
-
-            if len(matches) == 1:
-                return matches[0]
+            if value.lower() == 'required':
+                return DegreeOptions.required
+            elif "mentioned but not" in value.lower():
+                return DegreeOptions.mentioned_but_not_required
             else:
                 return DegreeOptions.not_mentioned
             
@@ -400,10 +423,12 @@ class RequiredPreferredBreakout(BaseModel):
     masters_degree: Optional[DegreeOptions] = Field(
         default=DegreeOptions.not_mentioned,
         description=(
-            "This refers to any Master's, Master of Arts, Master of Science, or general advanced degree or graduate degree mentioned in the job description. "
-            "Return 'Required' if the job explicitly mandates a master's degree or advanced degree; "
-            "return 'Preferred/Can be substituted with experience' if a master's degree or advanced degree is preferred or can be substituted with experience; "
-            "return 'Other' if an alternative requirement is provided; otherwise, return 'Not mentioned' if there is no explicit mention. "
+             "References to a Master's Degree include: "
+            "'Master's', 'Master of Arts', 'Master of Science', 'MBA', 'LLM degree', "
+            "or any general advanced degree or graduate degree mentioned in the job description. "
+            "Return 'Required' if the job explicitly requires a master's degree, advanced degree, or alternative reference to the degree. "
+            "Return 'Mentioned but not required' if a master's degree or advanced degree is preferred, can be substituted with experience, or is mentioned but isn't explicitly required. "
+            "Return 'Not mentioned' if no mention is made to this degree or its alternative references. "
         )
     )
     @field_validator("masters_degree", mode="before")
@@ -415,11 +440,10 @@ class RequiredPreferredBreakout(BaseModel):
             return value
         
         if isinstance(value, str):
-            value_lower = value.lower().strip()
-            matches = [v for k, v in DEGREE_MAPPING.items() if k in value_lower]
-
-            if len(matches) == 1:
-                return matches[0]
+            if value.lower() == 'required':
+                return DegreeOptions.required
+            elif "mentioned but not" in value.lower():
+                return DegreeOptions.mentioned_but_not_required
             else:
                 return DegreeOptions.not_mentioned
             
@@ -428,10 +452,12 @@ class RequiredPreferredBreakout(BaseModel):
     doctoral_degree_including_jd_md: Optional[DegreeOptions] = Field(
         default=DegreeOptions.not_mentioned,
         description=(
-            "This refers to any Doctorate, PhD, JD, MD or general advanced degree or graduate degree mentioned in the job description. "
-            "Return 'Required' if the job requires a doctoral-level degree; "
-            "return 'Preferred/Can be substituted with experience' if a doctoral degree is preferred but not mandatory; "
-            "return 'Other' if a non-standard requirement is specified; otherwise, return 'Not mentioned' if the degree is not mentioned. "
+             "References to a Doctoral Degree (including MD, JD) include: "
+            "'Doctorate', 'PhD', 'JD', 'MD', 'Pharm D', 'PharmD', 'PsyD', "
+            "or any general advanced degree or general graduate degree mentioned in the job description. "
+            "Return 'Required' if the job explicitly requires a doctoral-level degree or alternative reference to the degree. "
+            "Return 'Mentioned but not required' if a doctoral degree is preferred, can be substituted with experience, or is mentioned but isn't explicitly required. "
+            "Return 'Not mentioned' if no mention is made to this degree. "
         )
     )
     @field_validator("doctoral_degree_including_jd_md", mode="before")
@@ -443,11 +469,10 @@ class RequiredPreferredBreakout(BaseModel):
             return value
         
         if isinstance(value, str):
-            value_lower = value.lower().strip()
-            matches = [v for k, v in DEGREE_MAPPING.items() if k in value_lower]
-
-            if len(matches) == 1:
-                return matches[0]
+            if value.lower() == 'required':
+                return DegreeOptions.required
+            elif "mentioned but not" in value.lower():
+                return DegreeOptions.mentioned_but_not_required
             else:
                 return DegreeOptions.not_mentioned
             
@@ -951,7 +976,7 @@ class ExtractBreakoutSchema(BaseModel):
     required_preferred: Optional[RequiredPreferredBreakout] = Field(
         default_factory=dict,
         description="Return the required/preferred education levels, major, experience, and qualifications."
-        "For Education Fields: Extract only explicitly mentioned degrees and training/vocational programs. Do not infer based on occupation, tasks, or related credentials/certifications. Categorize whether a degree type is Required, Preferred/Can be substituted with experience, or Not mentioned."
+        "For Education Fields: Extract only explicitly mentioned degrees and training/vocational programs. Do not infer based on occupation, tasks, or related credentials/certifications. Categorize whether a degree type is 'Required', 'Mentioned but not required', or 'Not mentioned'."
     )
     benefits: Optional[List[str]] = Field(
         default=None,
@@ -1099,6 +1124,25 @@ If only one value for the pay range appears in the job description, please retur
             return RemoteOption.fully_remote
         else:    
             return RemoteOption.not_specified
+
+    naics_code: Optional[str] = Field(
+        default=None,
+        description=(
+            "Provide the most appropriate 6-digit North American Industry Classification System (NAICS) code "
+            "for the business or industry of the company from which the job post originates, "
+            "formatted as six consecutive digits (e.g., '541511')."
+        )
+    )
+
+    @field_validator("naics_code", mode="before")
+    def validate_naics_code(cls, value):
+        if isinstance(value, str):
+            cleaned = clean_naics_code(value)
+            return cleaned if len(cleaned) == 6 else None
+        elif isinstance(value, int):
+            return str(value).zfill(6) if 100000 <= value <= 999999 else None
+        else:
+            return None
 
 class ExtractEducationSchema(BaseModel):
     """
